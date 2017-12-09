@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8"/>
+<title>Flat-field correction - Wikipedia</title>
+<script>document.documentElement.className = document.documentElement.className.replace( /(^|\s)client-nojs(\s|$)/, "$1client-js$2" );</script>
+<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Flat-field_correction","wgTitle":"Flat-field correction","wgCurRevisionId":779509512,"wgRevisionId":779509512,"wgArticleId":1983473,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["CS1 maint: Uses authors parameter","Optics","Computer graphic techniques","Astrophotography","Image processing"],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgMonthNamesShort":["","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"wgRelevantPageName":"Flat-field_correction","wgRelevantArticleId":1983473,"wgRequestId":"Wimv8gpAICsAAH3Qhy8AAACC","wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgFlaggedRevsParams":{"tags":{}},"wgStableRevisionId":null,"wgWikiEditorEnabledModules":{"toolbar":true,"preview":false,"publish":false},"wgBetaFeaturesFeatures":[],"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsShouldSendModuleToUser":true,"wgPopupsConflictsWithNavPopupGadget":false,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","usePageImages":true,"usePageDescriptions":true},"wgPreferredVariant":"en","wgMFExpandAllSectionsUserOption":false,"wgMFDisplayWikibaseDescriptions":{"search":true,"nearby":true,"watchlist":true,"tagline":false},"wgRelatedArticles":null,"wgRelatedArticlesUseCirrusSearch":true,"wgRelatedArticlesOnlyUseCirrusSearch":false,"wgULSCurrentAutonym":"English","wgNoticeProject":"wikipedia","wgCentralNoticeCookiesToDelete":[],"wgCentralNoticeCategoriesUsingLegacy":["Fundraising","fundraising"],"wgCategoryTreePageCategoryOptions":"{\"mode\":0,\"hideprefix\":20,\"showcount\":true,\"namespaces\":false}","wgWikibaseItemId":"Q3820478","wgCentralAuthMobileDomain":false,"wgCodeMirrorEnabled":false,"wgVisualEditorToolbarScrollOffset":0,"wgVisualEditorUnsupportedEditParams":["undo","undoafter","veswitched"],"wgEditSubmitButtonLabelPublish":false});mw.loader.state({"ext.gadget.charinsert-styles":"ready","ext.globalCssJs.user.styles":"ready","ext.globalCssJs.site.styles":"ready","site.styles":"ready","noscript":"ready","user.styles":"ready","user":"ready","user.options":"ready","user.tokens":"loading","ext.math.styles":"ready","ext.cite.styles":"ready","wikibase.client.init":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","ext.wikimediaBadges":"ready","mediawiki.legacy.shared":"ready","mediawiki.legacy.commonPrint":"ready","mediawiki.sectionAnchor":"ready","mediawiki.skinning.interface":"ready","skins.vector.styles":"ready","ext.globalCssJs.user":"ready","ext.globalCssJs.site":"ready"});mw.loader.implement("user.tokens@1dqfd7l",function ( $, jQuery, require, module ) {
+mw.user.tokens.set({"editToken":"+\\","patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});/*@nomin*/
+
+});mw.loader.load(["ext.math.scripts","ext.cite.a11y","site","mediawiki.page.startup","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.toc","mediawiki.searchSuggest","ext.gadget.teahouse","ext.gadget.ReferenceTooltips","ext.gadget.watchlist-notice","ext.gadget.DRN-wizard","ext.gadget.charinsert","ext.gadget.refToolbar","ext.gadget.extra-toolbar-buttons","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.eventLogging.subscriber","ext.wikimediaEvents","ext.navigationTiming","ext.uls.eventlogger","ext.uls.init","ext.uls.interface","ext.centralNotice.geoIP","ext.centralNotice.startUp","skins.vector.js"]);});</script>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.cite.styles%7Cext.math.styles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cskins.vector.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector"/>
+<script async="" src="/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=vector"></script>
+<meta name="ResourceLoaderDynamicStyles" content=""/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=ext.gadget.charinsert-styles&amp;only=styles&amp;skin=vector"/>
+<link rel="stylesheet" href="/w/load.php?debug=false&amp;lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector"/>
+<meta name="generator" content="MediaWiki 1.31.0-wmf.11"/>
+<meta name="referrer" content="origin-when-cross-origin"/>
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Woy_Woy_Channel_-_Vignetted.jpg/1200px-Woy_Woy_Channel_-_Vignetted.jpg"/>
+<link rel="alternate" href="android-app://org.wikipedia/http/en.m.wikipedia.org/wiki/Flat-field_correction"/>
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=Flat-field_correction&amp;action=edit"/>
+<link rel="edit" title="Edit this page" href="/w/index.php?title=Flat-field_correction&amp;action=edit"/>
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png"/>
+<link rel="shortcut icon" href="/static/favicon/wikipedia.ico"/>
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (en)"/>
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd"/>
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/"/>
+<link rel="canonical" href="https://en.wikipedia.org/wiki/Flat-field_correction"/>
+<link rel="dns-prefetch" href="//login.wikimedia.org"/>
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<!--[if lt IE 9]><script src="/w/load.php?debug=false&amp;lang=en&amp;modules=html5shiv&amp;only=scripts&amp;skin=vector&amp;sync=1"></script><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-0 ns-subject page-Flat-field_correction rootpage-Flat-field_correction skin-vector action-view">		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+			<div id="siteNotice" class="mw-body-content"><!-- CentralNotice --></div><div class="mw-indicators mw-body-content">
+</div>
+<h1 id="firstHeading" class="firstHeading" lang="en">Flat-field correction</h1>			<div id="bodyContent" class="mw-body-content">
+				<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>				<div id="contentSub"></div>
+								<div id="jump-to-nav" class="mw-jump">
+					Jump to:					<a href="#mw-head">navigation</a>, 					<a href="#p-search">search</a>
+				</div>
+				<div id="mw-content-text" lang="en" dir="ltr" class="mw-content-ltr"><div class="mw-parser-output"><dl>
+<dd><i>Not to be confused with <a href="/wiki/Petzval_field_curvature" title="Petzval field curvature">Petzval field curvature</a>, which refers to focus uniformity.</i></dd>
+</dl>
+<div class="thumb tright">
+<div class="thumbinner" style="width:212px;"><a href="/wiki/File:Woy_Woy_Channel_-_Vignetted.jpg" class="image"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Woy_Woy_Channel_-_Vignetted.jpg/210px-Woy_Woy_Channel_-_Vignetted.jpg" width="210" height="158" class="thumbimage" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/0/03/Woy_Woy_Channel_-_Vignetted.jpg/315px-Woy_Woy_Channel_-_Vignetted.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/0/03/Woy_Woy_Channel_-_Vignetted.jpg/420px-Woy_Woy_Channel_-_Vignetted.jpg 2x" data-file-width="2048" data-file-height="1536" /></a>
+<div class="thumbcaption">
+<div class="magnify"><a href="/wiki/File:Woy_Woy_Channel_-_Vignetted.jpg" class="internal" title="Enlarge"></a></div>
+The brightness variation due to <a href="/wiki/Vignetting" title="Vignetting">vignetting</a>, as shown here, can be corrected by selectively brightening the perimeter of the image.</div>
+</div>
+</div>
+<p><b>Flat-field correction</b> is a technique used to improve quality in <a href="/wiki/Digital_imaging" title="Digital imaging">digital imaging</a>. The goal is to remove artifacts from 2-D images that are caused by variations in the pixel-to-pixel sensitivity of the detector and/or by distortions in the optical path. It is a standard calibration procedure in everything from pocket <a href="/wiki/Digital_camera" title="Digital camera">digital cameras</a> to giant telescopes.</p>
+<p>Flat fielding refers to the process of compensating for different <a href="/wiki/Gain_(electronics)" title="Gain (electronics)">gains</a> and <a href="/wiki/Dark_current_(physics)" title="Dark current (physics)">dark currents</a> in a detector. Once a detector has been appropriately flat-fielded, a uniform signal will create a uniform output (hence flat-field). This then means any further signal is due to the phenomenon being detected and not a <a href="/wiki/Systematic_error" class="mw-redirect" title="Systematic error">systematic error</a>.</p>
+<p>A flat-field consists of two numbers for each pixel, the pixel's gain and its dark current (or <a href="/wiki/Dark_frame" class="mw-redirect" title="Dark frame">dark frame</a>). The pixel's gain is how the amount of signal given by the detector varies as a function of the amount of light (or equivalent). The gain is almost always a linear variable, as such the gain is given simply as the ratio of the input and output signals. The dark-current is the amount of signal given out by the detector when there is no incident light (hence dark frame). In many detectors this can also be a function of time, for example in astronomical telescopes it is common to take a dark-frame of the same time as the planned light exposure. The gain and dark-frame for optical systems can also be established by using a series of <a href="/wiki/Neutral_density_filter" class="mw-redirect" title="Neutral density filter">neutral density filters</a> to give input/output signal information and applying a least squares fit to obtain the values for the dark current and gain. <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>C</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">(</mo>
+              <mi>R</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>D</mi>
+              <mo stretchy="false">)</mo>
+              <mo>&#x2217;<!-- ∗ --></mo>
+              <mi>m</mi>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">(</mo>
+              <mi>F</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>D</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo stretchy="false">(</mo>
+          <mi>R</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>D</mi>
+          <mo stretchy="false">)</mo>
+          <mo>&#x2217;<!-- ∗ --></mo>
+          <mi>G</mi>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle C={{(R-D)*m} \over {(F-D)}}={(R-D)*G}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9a90e1920612492bcd86100cc7416155b4f506cb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:33.91ex; height:6.509ex;" alt="{\displaystyle C={{(R-D)*m} \over {(F-D)}}={(R-D)*G}}" /></span></p>
+<p>where:</p>
+<ul>
+<li>C = corrected image</li>
+<li>R = raw image</li>
+<li>F = flat field image</li>
+<li>D = dark field or dark frame</li>
+<li>m = image-averaged value of (F-D)</li>
+<li>G = Gain = <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <mstyle displaystyle="true" scriptlevel="0">
+          <mi>m</mi>
+        </mstyle>
+        <mrow>
+          <mo stretchy="false">(</mo>
+          <mi>F</mi>
+          <mo>&#x2212;<!-- − --></mo>
+          <mi>D</mi>
+          <mo stretchy="false">)</mo>
+        </mrow>
+      </mfrac>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle m \over (F-D)}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/b2e9d7198f93e87b3555c6745b8fdf361f5fdb08" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:9.203ex; height:5.509ex;" alt="m\over(F-D)" /></span><sup id="cite_ref-1" class="reference"><a href="#cite_note-1">[1]</a></sup></li>
+</ul>
+<p>In this equation, capital letters are 2D matrices, and lowercase letters are scalars. All matrix operations are performed element-by-element.</p>
+<p>In order for an astrophotographer to capture a light frame, he or she must place a light source over the imaging instrument's objective lens such that the light source emanates evenly through the users optics. The photographer must then adjust the exposure of their imaging device (CCD or DSLR camera) so that when the histogram of the image is viewed, a peak reaching about 40–70% of the dynamic range (maximum range of pixel values) of the imaging device is seen. The photographer typically takes 15–20 light frames and performs median stacking. Once the desired light frames are acquired, the objective lens is covered so that no light is allowed in, then 15–20 dark frames are taken, each of equal exposure time as a light frame. These are called Dark-Flat frames.</p>
+<p></p>
+<div id="toc" class="toc">
+<div class="toctitle">
+<h2>Contents</h2>
+</div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Flat_field_correction_in_X-ray_imaging"><span class="tocnumber">1</span> <span class="toctext">Flat field correction in X-ray imaging</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#See_also"><span class="tocnumber">2</span> <span class="toctext">See also</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#References"><span class="tocnumber">3</span> <span class="toctext">References</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#External_links"><span class="tocnumber">4</span> <span class="toctext">External links</span></a></li>
+</ul>
+</div>
+<p></p>
+<h2><span class="mw-headline" id="Flat_field_correction_in_X-ray_imaging">Flat field correction in X-ray imaging</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flat-field_correction&amp;action=edit&amp;section=1" title="Edit section: Flat field correction in X-ray imaging">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>In X-ray imaging, the acquired projection images generally suffer from fixed-pattern noise, which is one of the limiting factors of image quality. It may stem from beam inhomogeneity, gain variations of the detector response due to inhomogeneities in the photon conversion yield, losses in charge transport, charge trapping, or variations in the performance of the readout. Also, the scintillator screen may accumulate dust and/or scratches on its surface, resulting in systematic patterns in every acquired X-ray projection image. In X-ray Computed Tomography (CT), fixed-pattern noise is known to significantly degrade the achievable spatial resolution and generally leads to ring or band artifacts in the reconstructed images. Fixed pattern noise can be easily removed using flat field correction. In conventional flat field correction, projection images without sample are acquired with and without the X-ray beam turned on, which are referred to as flat fields (F) and dark fields (D). Based on the acquired flat and dark fields, the measured projection images (P) with sample are then normalized to new images (N) according to <sup id="cite_ref-VanNieuwenhove_2-0" class="reference"><a href="#cite_note-VanNieuwenhove-2">[2]</a></sup></p>
+<p><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>N</mi>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">(</mo>
+              <mi>P</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>D</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mo stretchy="false">(</mo>
+              <mi>F</mi>
+              <mo>&#x2212;<!-- − --></mo>
+              <mi>D</mi>
+              <mo stretchy="false">)</mo>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N={{(P-D)} \over {(F-D)}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/c9c94cb9b02b3d295a25774488f68887aab0f522" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.671ex; width:14.391ex; height:6.509ex;" alt="{\displaystyle N={{(P-D)} \over {(F-D)}}}" /></span></p>
+<p>While conventional flat field correction is an elegant and easy procedure that largely reduces fixed-pattern noise, it heavily relies on the stationarity of the X-ray beam, scintillator response and CCD sensitivity. In practice, however, this assumption is only approximately met. Indeed, detector elements are characterized by intensity dependent, nonlinear response functions and the incident beam often shows time dependent non-uniformities, which render conventional FFC inadequate. In synchrotron X-ray tomography, many factors may cause flat field variations: instability of the bending magnets of the synchrotron, temperature variations due to the water cooling in mirrors and the monochromator, or vibrations of the scintillator and other beamline components. The latter is responsible for the biggest variations in the flat fields. To deal with such variations, a <i><b>dynamic</b></i> <b>flat field correction</b> procedure can be employed that estimates a flat field for each individual projection. Through principal component analysis of a set of flat fields, which are acquired prior and/or posterior to the actual scan, eigen flat fields can be computed. A linear combination of the most important eigen flat fields can then used to individually normalize each X-ray projection:<sup id="cite_ref-VanNieuwenhove_2-1" class="reference"><a href="#cite_note-VanNieuwenhove-2">[2]</a></sup> <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mfrac>
+            <mrow class="MJX-TeXAtom-ORD">
+              <msub>
+                <mi>P</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>D</mi>
+                    <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+            </mrow>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>F</mi>
+                    <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+              <mo>+</mo>
+              <munder>
+                <mo>&#x2211;<!-- ∑ --></mo>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </munder>
+              <msub>
+                <mi>w</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>j</mi>
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <msub>
+                <mi>u</mi>
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mi>k</mi>
+                </mrow>
+              </msub>
+              <mo>&#x2212;<!-- − --></mo>
+              <mrow class="MJX-TeXAtom-ORD">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>D</mi>
+                    <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+              </mrow>
+            </mrow>
+          </mfrac>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N_{j}={{P_{j}-{\bar {D}}} \over {{\bar {F}}+\sum _{k}w_{jk}u_{k}-{\bar {D}}}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/a98b99a150a9e3b70e346621fc5d7aa0ec19efeb" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -3.005ex; width:26.03ex; height:7.176ex;" alt="{\displaystyle N_{j}={{P_{j}-{\bar {D}}} \over {{\bar {F}}+\sum _{k}w_{jk}u_{k}-{\bar {D}}}}}" /></span></p>
+<ul>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>N</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle N_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/e42efe207e17a74b4c17b1aa0cced7a84501bec9" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.794ex; height:2.843ex;" alt="N_{j}" /></span> = intensity normalized X-ray projection</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{j}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/4a5da6c3564a2129f714ef11acd8ba649d18e604" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:2.42ex; height:2.843ex;" alt="P_{j}" /></span> = raw X-ray projection</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>F</mi>
+              <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bar {F}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/d00c359ac2602692ea5da2b035f86d6ce2455bc1" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.816ex; height:2.676ex;" alt="{\displaystyle {\bar {F}}}" /></span> = mean flat field image (average of flat fields)</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9837644700489d04d977da272524cd5fda36f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.436ex; height:2.009ex;" alt="u_{k}" /></span> = k-th eigen flat field</li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>w</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>j</mi>
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle w_{jk}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/3441353011a63d150bf9466a970d5a3f0222a75c" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -1.005ex; width:3.456ex; height:2.343ex;" alt="{\displaystyle w_{jk}}" /></span> = weight of the eigen flat field <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>u</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>k</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle u_{k}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/9837644700489d04d977da272524cd5fda36f3d7" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.671ex; width:2.436ex; height:2.009ex;" alt="u_{k}" /></span></li>
+<li><span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" >
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mrow class="MJX-TeXAtom-ORD">
+          <mrow class="MJX-TeXAtom-ORD">
+            <mover>
+              <mi>D</mi>
+              <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+            </mover>
+          </mrow>
+        </mrow>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle {\bar {D}}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/6a899b65dfb3ab3073b4f7f257be4491141bee64" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.935ex; height:2.676ex;" alt="{\displaystyle {\bar {D}}}" /></span> = mean dark field (average of dark fields)</li>
+</ul>
+<h2><span class="mw-headline" id="See_also">See also</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flat-field_correction&amp;action=edit&amp;section=2" title="Edit section: See also">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a href="/wiki/Bias_frame" title="Bias frame">Bias frame</a></li>
+<li><a href="/wiki/Dark_frame" class="mw-redirect" title="Dark frame">Dark frame</a></li>
+<li><a href="/wiki/Fixed-pattern_noise" title="Fixed-pattern noise">Fixed-pattern noise</a></li>
+<li><a href="/wiki/Vignetting" title="Vignetting">Vignetting</a></li>
+</ul>
+<h2><span class="mw-headline" id="References">References</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flat-field_correction&amp;action=edit&amp;section=3" title="Edit section: References">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<div class="reflist" style="list-style-type: decimal;">
+<div class="mw-references-wrap">
+<ol class="references">
+<li id="cite_note-1"><span class="mw-cite-backlink"><b><a href="#cite_ref-1">^</a></b></span> <span class="reference-text"><a rel="nofollow" class="external free" href="http://www.princetoninstruments.com/cms/index.php/ccd-primer/152-flat-field-correction">http://www.princetoninstruments.com/cms/index.php/ccd-primer/152-flat-field-correction</a></span></li>
+<li id="cite_note-VanNieuwenhove-2"><span class="mw-cite-backlink">^ <a href="#cite_ref-VanNieuwenhove_2-0"><sup><i><b>a</b></i></sup></a> <a href="#cite_ref-VanNieuwenhove_2-1"><sup><i><b>b</b></i></sup></a></span> <span class="reference-text"><a href="#DynFFC">Van Nieuwenhove 2015.</a></span></li>
+</ol>
+</div>
+</div>
+<ul>
+<li>Olsen, Doug.; Dou, Changyong.; Zhang, Xiaodong.; Hu, Lianbo.; Kim, Hojin.; Hildum, Edward. <a rel="nofollow" class="external text" href="http://www.mdpi.com/2072-4292/2/2/464/pdf">Radiometric Calibration for AgCam</a>; Remote Sens. 2010, 2, 464-477</li>
+<li><cite id="DynFFC" class="citation journal">V. Van Nieuwenhove, J. De Beenhouwer, F. De Carlo, L. Mancini, F. Marone, and J. Sijbers (2015). "Dynamic intensity normalization using eigen flat fields in X-ray imaging". <i>Optics Express</i>. <b>23</b> (21): 27975–27989. <a href="/wiki/Bibcode" title="Bibcode">Bibcode</a>:<a rel="nofollow" class="external text" href="http://adsabs.harvard.edu/abs/2015OExpr..2327975V">2015OExpr..2327975V</a>. <a href="/wiki/Digital_object_identifier" title="Digital object identifier">doi</a>:<a rel="nofollow" class="external text" href="//doi.org/10.1364%2FOE.23.027975">10.1364/OE.23.027975</a>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Ajournal&amp;rft.genre=article&amp;rft.jtitle=Optics+Express&amp;rft.atitle=Dynamic+intensity+normalization+using+eigen+flat+fields+in+X-ray+imaging&amp;rft.volume=23&amp;rft.issue=21&amp;rft.pages=27975-27989&amp;rft.date=2015&amp;rft_id=info%3Adoi%2F10.1364%2FOE.23.027975&amp;rft_id=info%3Abibcode%2F2015OExpr..2327975V&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFlat-field+correction" class="Z3988"><span style="display:none;">&#160;</span></span><span class="citation-comment" style="display:none; color:#33aa33; margin-left:0.3em">CS1 maint: Uses authors parameter (<a href="/wiki/Category:CS1_maint:_Uses_authors_parameter" title="Category:CS1 maint: Uses authors parameter">link</a>)</span></li>
+</ul>
+<h2><span class="mw-headline" id="External_links">External links</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Flat-field_correction&amp;action=edit&amp;section=4" title="Edit section: External links">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<ul>
+<li><a rel="nofollow" class="external text" href="http://frigg.physastro.mnsu.edu/spect_flat.html">Flat-Field Correction</a></li>
+</ul>
+
+
+<!-- 
+NewPP limit report
+Parsed by mw1323
+Cached time: 20171124070012
+Cache expiry: 1900800
+Dynamic content: false
+CPU time usage: 0.080 seconds
+Real time usage: 0.153 seconds
+Preprocessor visited node count: 203/1000000
+Preprocessor generated node count: 0/1500000
+Post‐expand include size: 2689/2097152 bytes
+Template argument size: 85/2097152 bytes
+Highest expansion depth: 7/40
+Expensive parser function count: 0/500
+Lua time usage: 0.025/10.000 seconds
+Lua memory usage: 1.44 MB/50 MB
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%   63.874      1 -total
+ 60.77%   38.816      1 Template:Cite_journal
+ 39.10%   24.974      1 Template:Reflist
+  2.74%    1.749      1 Template:Main_other
+-->
+</div>
+<!-- Saved in parser cache with key enwiki:pcache:idhash:1983473-0!canonical!math=5 and timestamp 20171124070012 and revision id 779509512
+ -->
+<noscript><img src="//en.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript></div>					<div class="printfooter">
+						Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=Flat-field_correction&amp;oldid=779509512">https://en.wikipedia.org/w/index.php?title=Flat-field_correction&amp;oldid=779509512</a>"					</div>
+				<div id="catlinks" class="catlinks" data-mw="interface"><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Optics" title="Category:Optics">Optics</a></li><li><a href="/wiki/Category:Computer_graphic_techniques" title="Category:Computer graphic techniques">Computer graphic techniques</a></li><li><a href="/wiki/Category:Astrophotography" title="Category:Astrophotography">Astrophotography</a></li><li><a href="/wiki/Category:Image_processing" title="Category:Image processing">Image processing</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:CS1_maint:_Uses_authors_parameter" title="Category:CS1 maint: Uses authors parameter">CS1 maint: Uses authors parameter</a></li></ul></div></div>				<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Navigation menu</h2>
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Personal tools</h3>
+						<ul>
+							<li id="pt-anonuserpage">Not logged in</li><li id="pt-anontalk"><a href="/wiki/Special:MyTalk" title="Discussion about edits from this IP address [n]" accesskey="n">Talk</a></li><li id="pt-anoncontribs"><a href="/wiki/Special:MyContributions" title="A list of edits made from this IP address [y]" accesskey="y">Contributions</a></li><li id="pt-createaccount"><a href="/w/index.php?title=Special:CreateAccount&amp;returnto=Flat-field+correction" title="You are encouraged to create an account and log in; however, it is not mandatory">Create account</a></li><li id="pt-login"><a href="/w/index.php?title=Special:UserLogin&amp;returnto=Flat-field+correction" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o">Log in</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespaces</h3>
+						<ul>
+							<li id="ca-nstab-main" class="selected"><span><a href="/wiki/Flat-field_correction" title="View the content page [c]" accesskey="c">Article</a></span></li><li id="ca-talk"><span><a href="/wiki/Talk:Flat-field_correction" rel="discussion" title="Discussion about the content page [t]" accesskey="t">Talk</a></span></li>						</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label">
+							<span>Variants</span>
+						</h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Views</h3>
+						<ul>
+							<li id="ca-view" class="collapsible selected"><span><a href="/wiki/Flat-field_correction">Read</a></span></li><li id="ca-edit" class="collapsible"><span><a href="/w/index.php?title=Flat-field_correction&amp;action=edit" title="Edit this page [e]" accesskey="e">Edit</a></span></li><li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=Flat-field_correction&amp;action=history" title="Past revisions of this page [h]" accesskey="h">View history</a></span></li>						</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>More</span></h3>
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Search</label>
+						</h3>
+						<form action="/w/index.php" id="searchform">
+							<div id="simpleSearch">
+								<input type="search" name="search" placeholder="Search Wikipedia" title="Search Wikipedia [f]" accesskey="f" id="searchInput"/><input type="hidden" value="Special:Search" name="title"/><input type="submit" name="fulltext" value="Search" title="Search Wikipedia for this text" id="mw-searchButton" class="searchButton mw-fallbackSearchButton"/><input type="submit" name="go" value="Go" title="Go to a page with this exact name if it exists" id="searchButton" class="searchButton"/>							</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Main_Page"  title="Visit the main page"></a></div>
+						<div class="portal" role="navigation" id='p-navigation' aria-labelledby='p-navigation-label'>
+			<h3 id='p-navigation-label'>Navigation</h3>
+			<div class="body">
+								<ul>
+					<li id="n-mainpage-description"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z">Main page</a></li><li id="n-contents"><a href="/wiki/Portal:Contents" title="Guides to browsing Wikipedia">Contents</a></li><li id="n-featuredcontent"><a href="/wiki/Portal:Featured_content" title="Featured content – the best of Wikipedia">Featured content</a></li><li id="n-currentevents"><a href="/wiki/Portal:Current_events" title="Find background information on current events">Current events</a></li><li id="n-randompage"><a href="/wiki/Special:Random" title="Load a random article [x]" accesskey="x">Random article</a></li><li id="n-sitesupport"><a href="https://donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_en.wikipedia.org&amp;uselang=en" title="Support us">Donate to Wikipedia</a></li><li id="n-shoplink"><a href="//shop.wikimedia.org" title="Visit the Wikipedia store">Wikipedia store</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-interaction' aria-labelledby='p-interaction-label'>
+			<h3 id='p-interaction-label'>Interaction</h3>
+			<div class="body">
+								<ul>
+					<li id="n-help"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia">Help</a></li><li id="n-aboutsite"><a href="/wiki/Wikipedia:About" title="Find out about Wikipedia">About Wikipedia</a></li><li id="n-portal"><a href="/wiki/Wikipedia:Community_portal" title="About the project, what you can do, where to find things">Community portal</a></li><li id="n-recentchanges"><a href="/wiki/Special:RecentChanges" title="A list of recent changes in the wiki [r]" accesskey="r">Recent changes</a></li><li id="n-contactpage"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia">Contact page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Tools</h3>
+			<div class="body">
+								<ul>
+					<li id="t-whatlinkshere"><a href="/wiki/Special:WhatLinksHere/Flat-field_correction" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j">What links here</a></li><li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Flat-field_correction" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li><li id="t-upload"><a href="/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u">Upload file</a></li><li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li><li id="t-permalink"><a href="/w/index.php?title=Flat-field_correction&amp;oldid=779509512" title="Permanent link to this revision of the page">Permanent link</a></li><li id="t-info"><a href="/w/index.php?title=Flat-field_correction&amp;action=info" title="More information about this page">Page information</a></li><li id="t-wikibase"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3820478" title="Link to connected data repository item [g]" accesskey="g">Wikidata item</a></li><li id="t-cite"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=Flat-field_correction&amp;id=779509512" title="Information on how to cite this page">Cite this page</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-coll-print_export' aria-labelledby='p-coll-print_export-label'>
+			<h3 id='p-coll-print_export-label'>Print/export</h3>
+			<div class="body">
+								<ul>
+					<li id="coll-create_a_book"><a href="/w/index.php?title=Special:Book&amp;bookcmd=book_creator&amp;referer=Flat-field+correction">Create a book</a></li><li id="coll-download-as-rdf2latex"><a href="/w/index.php?title=Special:ElectronPdf&amp;page=Flat-field+correction&amp;action=show-download-screen">Download as PDF</a></li><li id="t-print"><a href="/w/index.php?title=Flat-field_correction&amp;printable=yes" title="Printable version of this page [p]" accesskey="p">Printable version</a></li>				</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-lang' aria-labelledby='p-lang-label'>
+			<h3 id='p-lang-label'>Languages</h3>
+			<div class="body">
+								<ul>
+					<li class="interlanguage-link interwiki-ca"><a href="https://ca.wikipedia.org/wiki/Correcci%C3%B3_de_camp_pla" title="Correcció de camp pla – Catalan" lang="ca" hreflang="ca" class="interlanguage-link-target">Català</a></li><li class="interlanguage-link interwiki-es"><a href="https://es.wikipedia.org/wiki/Campo_plano" title="Campo plano – Spanish" lang="es" hreflang="es" class="interlanguage-link-target">Español</a></li>				</ul>
+				<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q3820478#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>			</div>
+		</div>
+				</div>
+		</div>
+				<div id="footer" role="contentinfo">
+						<ul id="footer-info">
+								<li id="footer-info-lastmod"> This page was last edited on 9 May 2017, at 09:42.</li>
+								<li id="footer-info-copyright">Text is available under the <a rel="license" href="//en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a><a rel="license" href="//creativecommons.org/licenses/by-sa/3.0/" style="display:none;"></a>;
+additional terms may apply.  By using this site, you agree to the <a href="//wikimediafoundation.org/wiki/Terms_of_Use">Terms of Use</a> and <a href="//wikimediafoundation.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="//www.wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+							</ul>
+						<ul id="footer-places">
+								<li id="footer-places-privacy"><a href="https://wikimediafoundation.org/wiki/Privacy_policy" class="extiw" title="wmf:Privacy policy">Privacy policy</a></li>
+								<li id="footer-places-about"><a href="/wiki/Wikipedia:About" title="Wikipedia:About">About Wikipedia</a></li>
+								<li id="footer-places-disclaimer"><a href="/wiki/Wikipedia:General_disclaimer" title="Wikipedia:General disclaimer">Disclaimers</a></li>
+								<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+								<li id="footer-places-developers"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/How_to_contribute">Developers</a></li>
+								<li id="footer-places-cookiestatement"><a href="https://wikimediafoundation.org/wiki/Cookie_statement">Cookie statement</a></li>
+								<li id="footer-places-mobileview"><a href="//en.m.wikipedia.org/w/index.php?title=Flat-field_correction&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+							</ul>
+										<ul id="footer-icons" class="noprint">
+										<li id="footer-copyrightico">
+						<a href="https://wikimediafoundation.org/"><img src="/static/images/wikimedia-button.png" srcset="/static/images/wikimedia-button-1.5x.png 1.5x, /static/images/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation"/></a>					</li>
+										<li id="footer-poweredbyico">
+						<a href="//www.mediawiki.org/"><img src="/static/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/poweredby_mediawiki_132x47.png 1.5x, /static/images/poweredby_mediawiki_176x62.png 2x" width="88" height="31"/></a>					</li>
+									</ul>
+						<div style="clear: both;"></div>
+		</div>
+		<script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.080","walltime":"0.153","ppvisitednodes":{"value":203,"limit":1000000},"ppgeneratednodes":{"value":0,"limit":1500000},"postexpandincludesize":{"value":2689,"limit":2097152},"templateargumentsize":{"value":85,"limit":2097152},"expansiondepth":{"value":7,"limit":40},"expensivefunctioncount":{"value":0,"limit":500},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%   63.874      1 -total"," 60.77%   38.816      1 Template:Cite_journal"," 39.10%   24.974      1 Template:Reflist","  2.74%    1.749      1 Template:Main_other"]},"scribunto":{"limitreport-timeusage":{"value":"0.025","limit":"10.000"},"limitreport-memusage":{"value":1510725,"limit":52428800}},"cachereport":{"origin":"mw1323","timestamp":"20171124070012","ttl":1900800,"transientcontent":false}}});});</script><script>(window.RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgBackendResponseTime":66,"wgHostname":"mw1322"});});</script>
+	</body>
+</html>
