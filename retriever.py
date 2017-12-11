@@ -2,7 +2,16 @@ import nltk
 from nltk.corpus import stopwords as sw
 import math
 
-# used help from stack overflow to sort dictionary by Pagerank
+# --------------------------sources used for guidance-----------------------------
+# used help from https://www.saltycrane.com/blog/2007/09/how-to-sort-python-dictionary-by-keys/
+# for sorting by tf-idf score
+# Lecture slides presented in I-427 Search Informatics
+# Instructors Brad Demarest and Rahul Raghatate
+
+# this retriever file was just used to test retrieval methods. The  page .cgi file used for the website
+# is slightly changed to better suit use on the web - however the implemented retrieval algorithm is the same
+
+# tf-idf and search rankings is calculated during retrieval, pagerank of each page is calculated during indexing
 
 
 # converts dat file to dictionary
