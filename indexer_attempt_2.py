@@ -1,7 +1,12 @@
+# Final Project - indexer
+# Kunaal Shah
+
 # --------------------------sources used for guidance-----------------------------
 # https://www.python.org/doc/essays/graphs/
 # http://aakashjapi.com/fuckin-search-engines-how-do-they-work/
 # graphs and page rank:
+# old python files and notes from Info-I368 Intro to Network Science where we used networkx for most of our
+# assignments:
 # networkx documentation: https://networkx.github.io/documentation/networkx-1.9/tutorial/tutorial.html#directed-graphs
 #                         https://networkx.github.io/documentation/networkx-1.9/tutorial/tutorial.html#edges
 #                         https://networkx.github.io/documentation/networkx-1.9/reference/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank.html#networkx.algorithms.link_analysis.pagerank_alg.pagerank
@@ -19,7 +24,7 @@ import lxml.html, os
 # reads local html page and returns a tokenized and stemmed list of words
 def read_file(file):
     try:
-        with open("webpages/"+file,"r",encoding="UTF-8") as f:
+        with open("webpages/" + file, "r", encoding="UTF-8") as f:
             content = f.read()
             tokenization = nltk.word_tokenize(content)
             # set(to)

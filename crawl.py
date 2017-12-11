@@ -1,8 +1,17 @@
+# Final Project - crawl
+# Kunaal Shah
+
+
+# --------------------------sources used for guidance-----------------------------
+# help from http://buildsearchengine.blogspot.com/ for inspiration on data structures and traversal methods
+# for web crawlers
+# Lecture slides presented in I-427 Search Informatics
+# Instructors Brad Demarest and Rahul Raghatate
+
+
 import urllib.request,re
 import lxml.html
 import os
-
-# help from http://buildsearchengine.blogspot.com/ for setting up dfs web crawler
 
 
 # reads webpage, returns page contents
@@ -47,7 +56,6 @@ def change_relative_to_absolute(links,url):
     for link in links:
         # change relative links to full links
         if "http://" not in link and "https://" not in link and "www." not in link:
-            #baseurl = "http://" + str(os.path.basename(url))
             newurl = url + link.replace(" ", "")
             # add link to list of potentially valid links
             valid_links.append(newurl)
@@ -134,9 +142,8 @@ def crawl(seed, traversal, n):
 
 # ------------------main----------------------
 
-# saves 100 urls from web crawl
-bfs_crawl_web("http://www.starwars.com", 200)
 
-crawl()
+# saves 200 urls from web crawl
+bfs_crawl_web(200,"http://www.imdb.com")
+#crawl("http://www.starwars.com","bfs",200)
 
-#print(get_all_links(read_page("https://www.google.com")))
