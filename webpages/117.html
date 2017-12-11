@@ -1,0 +1,1233 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+    <title>Games Guest Services - Legal Notices</title>
+
+    <script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/VFRemote.js" type="text/javascript"></script><script src="/jslibrary/1501092696000/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/jslibrary/1510689194000/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="/resource/1502397863000/dig_Common/common/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1502397863000/dig_Common/common/css/main.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1502397863000/Horizon_Common/css/horizon.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1502397863000/Horizon_Common/css/selectize.css" rel="stylesheet" type="text/css" /><script type="text/javascript">
+Visualforce.remoting.Manager.add(new $VFRM.RemotingProviderImpl({"vf":{"vid":"066i0000003Anme","xhr":false,"dev":false,"tst":false,"dbg":false,"tm":1512941460659,"ovrprm":false},"actions":{"DIG_ArticleCtrl":{"ms":[{"name":"sendNumber","len":1,"ns":"","ver":28.0,"csrf":"VmpFPSxNakF4TnkweE1pMHhNMVF5TVRvek1Ub3dNQzQyTmpCYSxod3p1QjBFbXdrNDZPZjFCb3NUVlJCLE4yUmxOVFkx"}],"prm":0},"DIG_HeaderCtrl":{"ms":[{"name":"loginUser","len":2,"ns":"","ver":24.0,"csrf":"VmpFPSxNakF4TnkweE1pMHhNMVF5TVRvek1Ub3dNQzQyTmpCYSwyYkZJMllnZlAzNnBwbC1lYVFpNHB5LE5EZzVPR0Ux"}],"prm":0}},"service":"apexremote"}));
+</script><link href="/resource/1502397863000/dig_Common/common/images/favicon.png" rel="icon" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport" />
+    <meta content="" id="liveChatIdCategoryOverride" name="customLiveChatId" /><span id="page:j_id1">
+  <head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+  </head>
+
+  <script src="/resource/1502397863000/dig_Common/common/libs/jquery.js" type="text/javascript"></script>
+
+<script>
+ 
+ var dig_contactURL = "/en_US/Games/Contact";
+ var dig_productURL = "/en_US/Games/All";
+ var dig_baseURL = "https://help.disney.com/";
+ var dig_articleJSON = "/DIG_ArticleJSON";
+ var dig_currentLanguage = "en_US";
+ var dig_currentSiteLang = "en_US";
+ var dig_currentSection = "Games"; 
+ var facebook_connect_app_id = '';
+ var currentPageName = "DIG_Article";
+ var lblChatWindowLabel = "Oops – please note that you can only have one chat session open at a time!";
+ 
+
+ function correctBrowserAddress(){
+  
+ }
+ 
+ correctBrowserAddress();
+ </script></span>
+      <style>
+
+        html.full{ 
+          height: 100%;
+        }
+        .iframe-container {
+            height: 100%;
+            text-align: center;
+        }
+        #contact-livechat-body{
+            height: 100%;
+        }
+        .chat-iframe {
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            min-height: 253px;
+            max-width: 768px;
+            min-width: 320px;
+            border: none;
+            max-height: 100%;
+            overflow: auto;
+            background-color: transparent;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        .chatHeader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #FFF;
+            box-sizing: border-box;
+        }
+        
+        .chatFooter {
+            position: fixed;
+            top: 100%;
+            left: 0;
+            padding: 20px 10px 0 10px;
+            width: 100%;
+            height: 50px;
+            margin-top: -70px;
+            box-sizing: border-box;
+            background: transparent;
+            text-align: center;
+        }
+        input{
+          height: 45px;
+          width: 100%;
+          max-width: 768px;
+          font-size: 20px;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .chat-bar p{
+          top: 15px; 
+          color: #a7a7a7 !important;
+          font-size: 24px !important;    
+        }
+        .chat-bar .liveAgentEndButton{
+          cursor: pointer; 
+        }
+        .chat-bar span{
+           display: inline-block;
+           margin-top: -25px;
+            }
+         .chat-bar .back-button{
+                position: absolute;
+                display: block !important;
+                position: absolute;
+                top: -4px;
+                left: 5px;
+            }
+          .chat-bar .back-button::before{
+                content: '';
+                display: block;
+                width: 75px;
+                height: 75px;
+                background: url('http://help.disney.com/resource/horizon_common/Back.svg') no-repeat;
+                background-size: 100%;
+                float: left;
+
+          }
+            .chat-bar p{
+                font-size: 28px !important;
+                color: #a7a7a7 !important;
+                margin-top: 10px;
+                display: block;
+                position: relative; 
+                top: 22px;
+            }
+            .chat-bar .liveAgentChatElement{
+                position: absolute;
+                top: 18px;
+                text-align: center;
+                font-size: 17px;
+                display: block;
+            }
+            .displayMessage p{
+              color: #a7a7a7 !important;
+
+            }
+            .displayMessage span{
+              color: #a7a7a7 !important;
+
+            }
+            .embed-video {
+              position: relative;
+              padding-bottom: 56.25%; /* 16:9 */
+              padding-top: 25px;
+              height: 0;
+            }
+            .embed-video iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              padding-left: 20px;
+              padding-right: 20px;
+            }
+    </style>
+  <style>
+    .article-content li {list-style: inherit};
+    </style>
+<body class="page-articles Games Disney-com">
+      
+        <div id="contact-livechat-body">
+          <header class="chatHeader">
+            <div class="chat-bar">
+              <span style="width: 16%">
+                <a class="back-button" onclick="window.location = window.location;"></a>
+              </span>
+              <span style="width: 59%">
+                <p>Disney Chat</p>
+              </span>
+              <span style="width: 22%">
+                <a class="hide liveAgentChatElement liveAgentEndButton" title="End Chat">End Chat</a>
+              </span>
+            </div>
+          </header>
+          <div class="iframe-container">
+              <iframe allowTransparency="true" class="chat-iframe" frameborder="0" id="mywindow" name="mywindow" noscroll="true" scrolling="auto"></iframe>
+          </div>
+          <footer class="hide chatFooter">
+              <input />
+          </footer>
+        </div>
+<form id="page:form" name="page:form" method="post" action="/DIG_Article" class="main-page-form" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="page:form" value="page:form" />
+<script id="page:form:j_id16" type="text/javascript">createArticleDeflection=function(){A4J.AJAX.Submit('page:form',null,{'similarityGroupingId':'page:form:j_id16','oncomplete':function(request,event,data){lockScreen(false);},'parameters':{'page:form:j_id16':'page:form:j_id16'} } )};
+</script><script id="page:form:j_id17" type="text/javascript">refreshArticleData=function(){A4J.AJAX.Submit('page:form',null,{'similarityGroupingId':'page:form:j_id17','parameters':{'page:form:j_id17':'page:form:j_id17'} } )};
+</script>
+        <div class="clear"></div>
+	<div class="POP_LAYER_NONE" id="hiddenLayer" style="height: 100%;">
+		<div id="loader"></div>
+  	</div>  
+  	<script type="text/javascript">
+    $(function(){
+    
+    
+    var loaderElement = "<div class='spinner'>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\</div>";
+
+  //  var i=0;
+   //for (i = 0; i < 300; i++) {
+     
+      $('body #loader').append(loaderElement);
+    //}
+  });
+   </script> 
+    <body class="section-page Games ">
+      
+    <div class="Games"><span id="page:form:j_id26:j_id28">
+
+<div id="logoutDiv" style="display:none"></div><span id="page:form:j_id26:j_id28:j_id29:j_id31">
+	<div class="POP_LAYER_NONE" id="hiddenLayer" style="height: 100%;">
+		<div id="loader"></div>
+  	</div>  
+  	<script type="text/javascript">
+    $(function(){
+    
+    
+    var loaderElement = "<div class='spinner'>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\<div class='tooth'></div>\</div>";
+
+  //  var i=0;
+   //for (i = 0; i < 300; i++) {
+     
+      $('body #loader').append(loaderElement);
+    //}
+  });
+   </script></span>
+    <div class="header-wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-mobile" role="navigation">
+          
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-canvas="body" data-target=".navbar-offcanvas" data-toggle="offcanvas" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button><a href="/" class="navbar-brand"><img src="/resource/1502397863000/dig_Common/common/images/di-white-sm.png" alt="" /></a>
+                <span class="mobile-search">
+
+                </span>
+                  
+            </div>
+        
+            <div class="navbar-offcanvas navmenu-fixed-left offcanvas">
+                <div class="offcanvas-header" data-canvas="body" data-target=".navbar-offcanvas" data-toggle="offcanvas">
+                    
+
+
+
+                </div>
+                    <ul class="nav navbar-nav">
+                                <li><a href="https://help.disney.com/">Disney Help</a></li>
+                                <li><a href="https://help.disney.com/Games">Games</a></li>
+                                <li><a href="https://help.disney.com/Disney-Infinity">Disney Infinity</a></li>
+                                <li><a href="https://help.disney.com/clubpenguin">Club Penguin</a></li>
+                                <li><a href="https://help.disney.com/Disney-Sites">Disney Sites</a></li>
+                                <li><a href="https://help.disney.com/Apps">Disney Apps</a></li>
+                                <li><a href="https://help.disney.com/Marvel">Marvel Games</a></li>
+                                <li><a href="https://help.disney.com/News">Latest Articles</a></li>
+                                <li><a href="http://help.starwars.com">Star Wars Help</a></li>
+                        
+                        
+                    </ul>
+                    <div class="subheader-container"><span id="page:form:j_id26:j_id28:j_id29:j_id56">
+    
+    <div class="second-nav-wrapper">
+    <div class="container second-nav-container " id="second-nav"><a href="https://help.disney.com/en_US/Games"> 
+        <img class="pull-left" src="https://help.disney.com/resource/dig_Navbar/navbar/dark-disney3.png" /></a>
+        
+      <ul class="second-nav-items">
+        <li class="second-nav-items-first-child"><a href="https://help.disney.com/en_US/Games">Support</a>
+        </li>
+          <li><a href="https://help.disney.com/en_US/Disney-Sites/About-Disney">About Disney</a>          
+          </li>
+          <li><a href="http://disneystories.com/customer-service/">Digital Books</a>          
+          </li>
+          <li><a href="https://help.disney.com/en_US/Disney-Sites/Parks-and-Travel">Parks &amp; Travel</a>          
+          </li>
+          <li><a href="https://disneymovieclub.go.com/webapp/wcs/stores/servlet/AcquisitionFAQView">Disney Movie Club</a>          
+          </li>
+          <li><a href="http://www.disneystore.com/">shopDisney</a>          
+          </li>
+          <li><a href="https://disneyrewards.com/faq/">Disney Visa</a>          
+          </li>
+      </ul>
+      
+      <div class="clear"></div>
+    </div>
+    </div></span>
+                    </div><span id="page:form:j_id26:j_id28:j_id29:j_id86">
+    <div class="menu-spacer">
+    </div>
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-deafult"> 
+
+        </div>       
+    </div></span>
+                  <div id="bar-break"></div>
+                    <div id="social-container">
+                        <ul class="social-links">
+                            <li>
+                              <a class="fb" href="https://www.facebook.com/StarWars" target="_blank"></a>
+                            </li>
+                            <li>
+                              <a class="tumblr" href="http://starwars.tumblr.com/" target="_blank"></a>
+                            </li>
+                            <li>
+                              <a class="twitter" href="https://twitter.com/starwars" target="_blank"></a>
+                            </li>
+                            <li>
+                              <a class="instagram" href="http://instagram.com/starwars" target="_blank"></a>
+                            </li>
+                            <li>
+                              <a class="google_plus" href="https://plus.google.com/+StarWars/posts" target="_blank"></a>
+                            </li>
+                            <li>
+                              <a class="youtube" href="http://www.youtube.com/user/starwars" target="_blank"></a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-desktop" role="navigation">
+          
+        <div class="container">
+            <div class="navbar-header"><a href="/" class="navbar-brand"><img src="/resource/1502397863000/dig_Common/common/images/di-white-sm.png" alt="" /></a>
+            </div>
+        
+            <div class="collapse navbar-collapse navHeaderCollapse navbar-inverse">
+                    <ul class="nav navbar-nav">
+                                <li><a href="https://help.disney.com/">Disney Help</a></li>
+                                <li><a href="https://help.disney.com/Games">Games</a></li>
+                                <li><a href="https://help.disney.com/Disney-Infinity">Disney Infinity</a></li>
+                                <li><a href="https://help.disney.com/clubpenguin">Club Penguin</a></li>
+                                <li><a href="https://help.disney.com/Disney-Sites">Disney Sites</a></li>
+                                <li><a href="https://help.disney.com/Apps">Disney Apps</a></li>
+                                <li><a href="https://help.disney.com/Marvel">Marvel Games</a></li>
+                                <li><a href="https://help.disney.com/News">Latest Articles</a></li>
+                                <li><a href="http://help.starwars.com">Star Wars Help</a></li>
+                        
+                        
+                    </ul>
+
+            </div>
+        </div>
+    </nav>
+</div>
+    <div class="mask">  </div>
+ 
+
+
+
+
+   <script type="text/javascript">
+        //     $(document).ready(function() {
+        //         // Convenience methods used here. This could be $.cookie (if 
+        //         // jQuery Cookie plugin is avail) or localStorage.
+        //         var loggedIn = did.isLoggedIn();
+        //         var userName = DisneyID.readLocalData("welcome_name");
+        //         $("#signoutlobby").hide();
+        //         if (loggedIn == true) {
+        //             $.cookie("user", "1", {path: '/'});
+        //             if (userName) {
+        //                 $("#signoutlobby p.out").html("Welcome " + userName + "!");
+        //                 $("#signoutlobby").show();
+        //                 $("#signinlobby").hide();
+        //             }
+        //         }
+        //         else    // Page initialization: not logged in
+        //         {
+        //             // ...
+        //         }
+        //         $("#headerright").show();
+        //     });
+            
+        //  function redirectToLogin(){
+        //  lockScreen(false);
+        //     window.parent.location.href = window.parent.location.href; 
+        //  } 
+            
+        //  function createUsers( guest){
+        //     var url = window.parent.location.href;
+        //     var value = url.split('/');
+        //     var p1 = value.slice(0,2).join('/');
+        //     var p2 = value.slice(3).join('/');
+        //      Visualforce.remoting.Manager.invokeAction(
+        //             'DIG_HeaderCtrl.loginUser', guest,  p2  ,
+        //             function(result, event){
+        //                   if (event.status) {
+        //                         var output = $("<div />").html(result).text();
+        //                       //alert(output);
+        //                         lockScreen(false);
+        //                         window.parent.location.href = output;
+        //                         }
+        //                    else {
+        //                        alert('Invalid Field/Object API Name : '+event.message); 
+        //                   } 
+        //             }, 
+        //             {escape: true}
+        //      ); 
+                    
+        // }
+        
+
+        
+        // function GuestWrapper(firstName, lastName, email, guestName, token, dateOfBirth, country, gender, ageBand, languagePreference,
+        //                       registrationDate, parentEmail, countryCodeDetected, swid, continentAlpha2, countryAlpha2, countryAlpha3, regionAlpha2, ip,
+        //                       city, postalCode, state, phoneNumber, line1, line2, line3, addressType, phoneType, addressPreferred, phonePreferred){
+        //     this.firstName           = firstName;
+        //     this.lastName            = lastName;
+        //     this.email               = email;
+        //     this.guestName           = guestName;
+        //     this.token               = token;
+        //     this.dateOfBirth         = dateOfBirth;
+        //     this.country             = country ;
+        //     this.gender              = gender;
+        //     this.ageBand             = ageBand;
+        //     this.languagePreference  = languagePreference;
+        //     this.registrationDate    = registrationDate;
+        //     this.parentEmail         = parentEmail;
+        //     this.countryCodeDetected = countryCodeDetected;
+        //     this.swid                = swid;
+        //     this.continentAlpha2     = continentAlpha2;
+        //     this.countryAlpha2       = countryAlpha2;
+        //     this.countryAlpha3       = countryAlpha3;
+        //     this.regionAlpha2        = regionAlpha2;
+        //     this.ip                  = ip;
+        //     this.city                = city;
+        //     this.postalCode          = postalCode;
+        //     this.state               = state;
+        //     this.phoneNumber         = phoneNumber;    
+        //     this.line1               = line1;
+        //     this.line2               = line2;
+        //     this.line3               = line3;
+        //     this.addressType         = addressType;
+        //     this.phoneType           = phoneType;
+        //     this.addressPreferred    = addressPreferred;
+        //     this.phonePreferred      = phonePreferred;
+        // }
+
+        // function getFirstRecord(obj){
+        //     for(var s in obj){
+        //         return obj[s];
+        //     }
+        //     return null;
+        // }
+        
+        </script>    
+            
+         <script type="text/javascript">
+        //     var selectedLanguage = "en_US";
+            
+        //     var lightboxCodeMapping = {
+        //         "ar_XX" :"ar-XX", //: "Arabic",
+        //         "de"    : "de-DE",
+        //         "de_DE" :"de-DE", //: "Deutsch",
+        //         "de_CH" :"de-DE",
+        //         "de_AT" : "de-DE", 
+        //         "dk" : "da-DK", // "Dansk",
+        //         "en_US" :"en-US", //: "English",
+        //         "en-gb" : "en-US",
+        //         "en_GB" : "en-US", 
+        //         "en_CA" : "en-US",
+        //         "en-nz" : "en-US",
+        //         "es" :"es-ES", //: "Español",
+        //         "es_MX" : "es-ES",
+        //         "es-419" : "es-ES",
+        //         "en_AU" : "en-US",
+        //         "fi" :"fi-FI", //: "Suomi",
+        //         "fr" :"fr-FR", //: "Français",
+        //         "fr_CA" : "fr-FR",  
+        //         "fr-ch" : "fr-FR",  
+        //         "fr-be" : "fr-FR",
+        //         "it"    :"it-IT", //: "Italiano",
+        //         "ja"    :"ja-JP", //: "Japanese",
+        //         "ko_KR" :"ko-KR", //: "Korean",
+        //         "nl"    : "nl-NL", // "Nederlands",
+        //         "nl-be" : "nl-NL", // ????
+        //         "nn_NO" :"nn-NO", //: "Norsk",
+        //         "no"    : "nn-NO",
+        //         "pl"    : "pl-PL", 
+        //         "pl_PL" :"pl-PL", //: "Polski",
+        //         "pt_BR" :"pt-BR", //: "Português",
+        //         "ru" :"ru-RU", //: "???????",
+        //         "se"    : "en-US",  // Swedish", 
+        //         "sv" :"sv-SE", //: "Svenska",
+        //         "zh_CN" :"zh-CN" //:"Chinese" 
+        //     }    
+        //     var lightBoxLangCode = lightboxCodeMapping[selectedLanguage];
+            
+        //     console.log("Langauge code selected: " + selectedLanguage);
+        //     console.log("Lightbox language code: " + lightboxCodeMapping[selectedLanguage] );
+                       
+            
+            
+        //     var did = new DisneyID();
+            
+        //     var DisneyIdresponderPage = "https://help.disney.com/didResponder";
+        //     if ( DisneyIdresponderPage.indexOf('https') < 0 ){
+        //         DisneyIdresponderPage = DisneyIdresponderPage.replace('http','https');
+        //     }
+        
+        
+        //     did.init({
+        //                         /** client ID + '-STAGE' or '-PROD' */
+        //         langPref : lightBoxLangCode,
+        //         defaultLangPref: "en-US",
+        //         appId:"DI-GXTOOLS-PROD", // *CHANGE THIS* to your Client ID
+        //         env:"PROD",   // STG for all Non PROD instances, PROD for PROD instance
+        //         //responderPage: "https://help.disney.com/didResponder" , // *CHANGE THIS* to the url to your responder page. this needs to be white listed in light box server in addition to main page
+        //         responderPage: DisneyIdresponderPage,
+        //                         /** Perform silentLogin() implicitly. Optional, default false */  
+        //         silentAutoLogin: true,
+        //                         /** Show "star" background. Optional, default true */
+        //         showBackground: true,
+        //                         /** Optional, default false */
+        //         debug: true,
+        //                         /** Create registrations as "temporary". Optional, default false */
+        //         createTestAccounts: true,
+        //                         /** Diplay post-Lightbox success screen. Optional, default true */
+        //         successPageAfterCreate: false,
+        //                         /** Pariticipate in Single-Sign-On (SSO) */
+        //         sharedStorage: true,
+        //         httpCompatible:true,
+        //         authorizedUrls : [
+        //                   DisneyIdresponderPage
+        //         ],
+        //         /**
+        //          * @optional
+        //          * Callback after successful login. By the point, the Guest 
+        //          * has been logged in. This will not be called on PIL, gating, 
+        //          * or any other errors that prevent a guest from logging in. 
+        //          * @param object guest State of the guest
+        //          */
+        //         onLogin: function(guest) {
+        //             //alert('hello onlogin');
+        //             lockScreen(true);
+                  
+        //             var vFirstName = null;
+        //             var vLastName = null;
+        //             var vEmail = null;
+        //             var vUserName = null;
+        //             var vToken = null;
+        //             var vDOB = null;
+
+        //             var vCountry = null;
+        //             var vGender = null;
+        //             var vAgeBand = null;
+        //             var vLangPref = null;
+        //             var vRegDate = null;
+        //             var vParEmail = null;
+        //             var vCountryCodeDetected = false;
+        //             var vSWID = null;
+                    
+        //             var vContinentAlpha2 = null;
+        //             var vCountryAlpha2 = null;
+        //             var vCountryAlpha3 = null;
+        //             var vRegionAlpha2 = null;
+        //             var vIp = null;
+        //             var vCity = null;
+        //             var vPostalCode = null;
+        //             var vState = null;
+        //             var vNumber = null;
+        //             var vLine1 = null;
+        //             var vLine2 = null;
+        //             var vLine3 = null;
+        //             var vaddrType = null;
+        //             var vPhoneType = null;
+        //             var VaddrPref = null;
+        //             var vPhonePref = null;
+                    
+        //             if(guest.token.access_token != null){
+        //                    vToken = guest.token.access_token;
+        //                    console.log('Access token' + guest.token.access_token)
+        //             }
+        //             if(guest.profile != null){
+        //                if(guest.profile.firstName != null){
+        //                    vFirstName = guest.profile.firstName;}
+        //                if(guest.profile.lastName != null){
+        //                    vLastName = guest.profile.lastName;}
+        //                if(guest.profile.email != null){
+        //                    vEmail = guest.profile.email;}
+        //                if(guest.profile.username != null){
+        //                    vUserName = guest.profile.username;}
+        //                if(guest.profile.dateOfBirth != null){
+        //                    vDOB = guest.profile.dateOfBirth;}
+        //                if(guest.profile.gender != null){
+        //                    vGender = guest.profile.gender;}
+        //                if(guest.profile.ageBand != null){
+        //                    vAgeBand = guest.profile.ageBand;
+        //                    if (vAgeBand == "CHILD" && vLastName == null)
+        //                        vLastName = "ChildUser";
+        //                }
+        //                if(guest.profile.languagePreference != null){
+        //                    vLangPref = guest.profile.languagePreference;}
+        //                if(guest.profile.registrationDate != null){
+        //                    vRegDate = guest.profile.registrationDate;}
+        //                if(guest.profile.parentEmail != null){
+        //                    vParEmail = guest.profile.parentEmail;
+        //                    if (vAgeBand == "CHILD" && vEmail == null )
+        //                        vEmail = vParEmail;
+        //                }
+        //                if(guest.profile.countryCodeDetected != null){
+        //                    vCountryCodeDetected = guest.profile.countryCodeDetected;}
+        //                if(guest.profile.swid != null){
+        //                    vSWID = guest.profile.swid;}   
+        //             }
+                    
+        //             if(guest.profile.addresses != null){
+        //                 var address = getFirstRecord(guest.profile.addresses);
+        //                 if (address.country != null){
+        //                    vCountry =  address.country ;}
+        //                 if (address.city != null){
+        //                    vCity =  address.city ;}
+        //                 if (address.postalCode != null){
+        //                    vPostalCode =  address.postalCode ;}
+        //                 if (address.stateProvince != null){
+        //                    vState =  address.stateProvince ;}
+        //                 if (address.line1 != null){
+        //                    vLine1 =  address.line1 ;}
+        //                 if (address.line2 != null){
+        //                    vLine2 =  address.line2 ;}
+        //                 if (address.line3 != null){
+        //                    vLine3 =  address.line3 ;}
+        //                 if (address.type != null){
+        //                    vaddrType =  address.type ;}
+        //                 if (address.preferred != null){
+        //                    VaddrPref =  address.preferred ;}
+        //             }
+                    
+        //             if(guest.profile.phones != null){
+        //                 var phone = getFirstRecord(guest.profile.phones);
+        //                 if(phone.number != null){ 
+        //                     vNumber = phone.number ;}
+        //                 if(phone.type != null){ 
+        //                     vPhoneType = phone.type ;}
+        //                 if(phone.preferred != null){ 
+        //                     vPhonePref = phone.preferred ;}  
+        //             }
+                    
+        //             if(guest.geolocation != null){ 
+        //                 if(guest.geolocation.continentAlpha2 != null){
+        //                     vContinentAlpha2 = guest.geolocation.continentAlpha2;}
+        //                 if(guest.geolocation.countryAlpha2 != null) {
+        //                     vCountryAlpha2 = guest.geolocation.countryAlpha2;}
+        //                 if(guest.geolocation.countryAlpha3 != null){
+        //                     vCountryAlpha3 = guest.geolocation.countryAlpha3;}
+        //                 if(guest.geolocation.regionAlpha2 != null) {
+        //                     vRegionAlpha2 = guest.geolocation.regionAlpha2;}
+        //                 if(guest.geolocation.ip != null) {
+        //                     vIp = guest.geolocation.ip;}  
+        //             }
+        //             /*
+        //              alert(vCountry + '   '+ vContinentAlpha2 + '   '+vCountryAlpha2 + '   '+
+        //              vCountryAlpha3 + '   '+vRegionAlpha2 + '   '+vIp + '   '+vCity + '   '+
+        //              vPostalCode + '   '+vState + '   '+vNumber + '   '+vLine1 + '   '+
+        //              vLine2 + '   '+vLine3 + '   '+vaddrType + '   '+vPhoneType + '   '+
+        //              VaddrPref + '   '+vPhonePref + '   '+ vFirstName + '   '+vLastName + '   '+
+        //              vEmail + '   '+vUserName + '   '+vToken + '   '+vDOB + '   '+vGender + '   '+
+        //              vAgeBand + '   '+ vLangPref + '   '+ vRegDate + '   '+ vParEmail + '   '+
+        //              vCountryCodeDetected + '   '+ vSWID  );
+        //             */
+        //             var gwrapper = new GuestWrapper(vFirstName,
+        //                                             vLastName,
+        //                                             vEmail,
+        //                                             vUserName,
+        //                                             vToken,
+        //                                             vDOB,
+        //                                             vCountry, 
+        //                                             vGender,
+        //                                             vAgeBand,
+        //                                             vLangPref,
+        //                                             vRegDate,
+        //                                             vParEmail,
+        //                                             vCountryCodeDetected,
+        //                                             vSWID,
+        //                                             vContinentAlpha2,
+        //                                             vCountryAlpha2,
+        //                                             vCountryAlpha3,
+        //                                             vRegionAlpha2,
+        //                                             vIp,
+        //                                             vCity,
+        //                                             vPostalCode,
+        //                                             vState,
+        //                                             vNumber,
+        //                                             vLine1,
+        //                                             vLine2,
+        //                                             vLine3,
+        //                                             vaddrType,
+        //                                             vPhoneType,
+        //                                             VaddrPref,
+        //                                             vPhonePref );
+                                       
+                    
+        //             //var myaddr = guest.profile.addresses[0];
+        //             //alert(myaddr.country);
+        //             DisneyID.writeLocalData("welcome_name", guest.profile.firstName, "/", 30, DisneyID.debug);
+        //             DisneyID.log(guest);
+                    
+        //             var url = window.location.href;
+        //             if(url.indexOf('https') < 0 ){
+        //                 url = url.replace('http','https');
+        //                 window.location.href = url;
+        //             }
+        //             else{
+        //                 createUsers(JSON.stringify(gwrapper));
+        //             }
+                                    
+        //             $("#signoutlobby p.out").html("Welcome " + guest.profile.firstName + "!");
+        //             $("#signoutlobby").show();
+        //             $("#signinlobby").hide();
+        //             $("#headerright").show();  
+        //         },
+        //         /**
+        //          * @optional
+        //          * Callback after successful registration/account creation 
+        //          * happens. This also called on PIL errors and gating errors. 
+        //          * Do NOT log the guest in here (onLogin() is triggered after 
+        //          * this method returns, once the Guest has been successfully 
+        //          * logged in).
+        //          * @param object guest State of the guest
+        //          */
+        //         onCreate: function(guest) {
+        //             DisneyID.writeLocalData("welcome_name", guest.profile.firstName, "/", 30, DisneyID.debug);
+        //             DisneyID.log(guest);
+        //             $("#signoutlobby p.out").html("Welcome " + guest.profile.firstName + "!");
+        //             $("#signoutlobby").show();
+        //             $("#signinlobby").hide();
+        //             $("#headerright").show();
+        //         },
+        //         /**
+        //          * @optional
+        //          * Triggered after successful profile update--i.e., guest 
+        //          * information changed.  Note: refreshed tokens may be included.
+        //          * @param object guest New guest information 
+        //          */
+        //         onUpdate: function(guest) {                 
+        //             DisneyID.log("Test update success.");
+        //             DisneyID.writeLocalData("welcome_name", guest.profile.firstName, "/", 30, DisneyID.debug);
+        //             DisneyID.log(guest);
+        //             $("#signoutlobby p.out").html("Welcome " + guest.profile.firstName + "!");
+        //             $("#signoutlobby").show();
+        //             $("#signinlobby").hide();
+        //             $("#headerright").show();
+        //         },
+        //         /**
+        //          * @optional
+        //          * Callback after the guest has logged out. 
+        //          * @param object guest State of the guest (when it's available)
+        //          */
+        //         onLogout: function(guest) { 
+        //             lockScreen(true);
+        //             DisneyID.log("Test logout success.");
+        //             $("#signoutlobby").hide();
+        //             $("#signinlobby").show();               
+        //             DisneyID.deleteLocalData("welcome_name", "/");
+        //             $.removeCookie("user", {path: '/'});
+        //             $("#logoutDiv").html("<iframe src='" + "/secur/logout.jsp" + "'><iframe>");  
+        //             setTimeout("redirectToLogin()", 500);
+        //         },
+        //         /**
+        //          * @optional
+        //          * The onReady function fires on Lightbox page load. It 
+        //          * reports the page that opened, and perhaps some interesting 
+        //          * information regarding the current flow, such as a Facebook 
+        //          * login vs. a regular login.
+        //          *    Example: 
+        //          *      {"page":"create-profile-success", 
+        //          *       "params":["page=create-profile-success", 
+        //          *       "env=STG", ..., "birthdate-month=02", 
+        //          *       "birthdate-day=01", "birthdate-year=2012"]
+        //          *      }
+        //          * @param  object objPageInfo 
+        //          */
+        //         onReady: function(objPageInfo) {
+        //             //alert("onReady");
+        //         },
+        //         /**
+        //          * @optional
+        //          * Triggered upon refresh the local access token here
+        //          * @param  object tokenObj 
+        //          */
+        //         onTokenRefresh: function(tokenObj) {
+        //             //alert("onTokenRefresh");
+        //         },
+        //         /**
+        //          * @required
+        //          * This function is called when the lightbox completes the 
+        //          * close process. Put any functionality which closes or 
+        //          * redirects the website here.
+        //          */ 
+        //         onClose: function() {
+        //             // ...
+        //         },
+
+        //         /**  @deprecated */
+        //         loginSuccess:function(data, guest) { 
+        //             //DEPRECATED
+        //         },
+        //         /**  @deprecated */
+        //         createSuccess:function(data, guest) { 
+        //             //DEPRECATED
+        //         },
+        //         /**  @deprecated */
+        //         updateSuccess:function(data) { 
+        //             //DEPRECATED
+        //         },
+        //         /**  @deprecated */
+        //         logoutSuccess:function(data) { 
+        //             //DEPRECATED
+        //         }
+        //     });
+        </script></span><span id="page:form:j_id26:j_id128">
+    
+    <div class="second-nav-wrapper">
+    <div class="container second-nav-container " id="second-nav"><a href="https://help.disney.com/en_US/Games"> 
+        <img class="pull-left" src="https://help.disney.com/resource/dig_Navbar/navbar/dark-disney3.png" /></a>
+        
+      <ul class="second-nav-items">
+        <li class="second-nav-items-first-child"><a href="https://help.disney.com/en_US/Games">Support</a>
+        </li>
+          <li><a href="https://help.disney.com/en_US/Disney-Sites/About-Disney">About Disney</a>          
+          </li>
+          <li><a href="http://disneystories.com/customer-service/">Digital Books</a>          
+          </li>
+          <li><a href="https://help.disney.com/en_US/Disney-Sites/Parks-and-Travel">Parks &amp; Travel</a>          
+          </li>
+          <li><a href="https://disneymovieclub.go.com/webapp/wcs/stores/servlet/AcquisitionFAQView">Disney Movie Club</a>          
+          </li>
+          <li><a href="http://www.disneystore.com/">shopDisney</a>          
+          </li>
+          <li><a href="https://disneyrewards.com/faq/">Disney Visa</a>          
+          </li>
+      </ul>
+      
+      <div class="clear"></div>
+    </div>
+    </div></span>
+        <div id="background-styles">
+            <div class="starfield star-left"></div>
+            <div class="starfield star-right"></div>
+            <div class="site-default-gradient">
+              <div class="safety-color"></div>
+            </div>
+
+        </div>         
+        <div class="canvas container main-container shadow-light">
+            <div class="games-background"></div><span id="page:form:j_id26:j_id170"><span id="page:form:j_id26:j_id170:disneyBanners:j_id180">
+      <div class="article-header-product"><a href="/en_US/Games/Disney-com">
+        <img class="poster" src="https://help.disney.com/resource/dig_Dcom/Dcom/ProdIcons/icon_guestservices_disneycom.jpg" /></a>
+          <h1>Disney.com</h1>
+        
+        <table><tr><td>     
+        <ul style="padding-left: 0px;">
+        </ul>
+        </td></tr></table>
+      </div></span></span><span id="page:form:j_id26:j_id213">
+    <div class="row" id="search">
+    <div class="col-md-12">
+        <div class="well well-sm row">
+        <div class="input-group input-group-lg">
+            <input autocomplete="off" autofocus="autofocus" class="form-control" id="searchfield" placeholder="Enter your question or a keyword" style="background-color: white !important;" type="text" value="" />
+            <span class="input-group-btn" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+                <button class="btn btn-success" id="btnSearch" onClick="getSearchText('/en_US/Games/Search?productCode=');return false;" type="button">Search</button>
+            </span>
+        </div>
+        </div>
+    </div>
+    </div></span><span id="page:form:j_id26:j_id216">
+
+         <a class="back-landing" onclick="backButton('','en_US')"><span></span></a>
+         <div class="clear"></div>
+            <div class="content-container-starwars">
+             <div class="col-md-12" id="content"><span id="page:form:j_id26:j_id232"></span><span id="page:form:j_id26:j_id239">
+                <div id="article">
+                                <div class="article-heading">
+                                    <h1>Legal Notices</h1>
+                                    <h4>posted on  2017/11/13
+                                    </h4>
+                        <hr />
+                    </div>
+                    <div class="article-content" style="height:100%; padding: 0 0px;"><span id="page:form:j_id26:artBody" class="artBody"><div style="margin-left: 40px;"><strong>COPYRIGHTS, TRADEMARKS &amp; CREDITS</strong><br><br><br><strong>MOVIES</strong><br><br>  •  &copy; Disney•Pixar. All rights reserved.<br>  •  Chronicles of Narnia: THE CHRONICLES OF NARNIA, NARNIA, and all book titles, characters and locales original thereto are trademarks of C.S. Lewis Pte Ltd. and are used with permission.<br><br><br><strong>TV</strong><br><br>  •  Disney XD&copy; Disney Enterprises, Inc.<br>  •  JETIX:&copy; &amp; TM Disney. All rights reserved.<br><br><br><strong>DISNEY PARKS, RESORTS AND DESTINATIONS</strong><br><br>  •  Walt Disney World® Resort in Florida<br>  •  Disneyland® Resort in California<br>  •  Disney Cruise Line®<br>  •  Disney Magic® Cruise Ship<br>  •  Disney Wonder® Cruise Ship<br>  •  Disney Dream® Cruise Ship<br>  •  Disney Fantasy® Cruise Ship<br>  •  Disney Vacation Club®<br>  •  RCI® and related marks are registered trademarks and/or service marks in the United States and internationally. All rights reserved.<br>  •  Disneyland® Paris<br>  •  Disneyland® Park<br>  •  Walt Disney Studios® Park<br>  •  Hong Kong Disneyland® Resort<br>  •  Tokyo Disney Resort®<br>  •  Tokyo Disneyland® Park<br>  •  Tokyo DisneySea® Park<br>  •  Adventures by Disney®<br>  •  Aulani, A Disney Resort &amp; Spa<br><br><br><strong>WALT DISNEY WORLD® RESORT THEME PARKS AND LANDS</strong><br><br>  •  Magic Kingdom® Theme Park<br>  •  Main Street, U.S.A.® area<br>  •  Adventureland® area<br>  •  Frontierland® area<br>  •  Fantasyland® area<br>  •  Mickey&#39;s Toontown® Fair<br>  •  Tomorrowland® area<br>  •  Epcot® Theme Park<br>  •  Disney&#39;s Animal Kingdom® Theme Park<br>  •  Disney&#39;s Animal Kingdom® area (or land)<br>  •  Rafiki&#39;s Planet Watch® area<br>  •  Disney&#39;s Hollywood Studios® Theme Park<br><br><br><strong>WALT DISNEY WORLD® ATTRACTIONS</strong><br><br>  •  Astro Orbiter® attraction<br>  •  Buzz Lightyear&#39;s Space Ranger Spin attraction inspired by the Disney•Pixar film Toy Story 2<br>  •  Caravan Stage® Theater<br>  •  Conservation Station® attraction<br>  •  DINOSAUR attraction<br>  •  Discovery Island® Trails<br>  •  Expedition Everest - Legend of the Forbidden Mountain™ attraction<br>  •  Fantasmic<br>  •  Finding Nemo - The Musical, inspired by the Disney•Pixar film Finding Nemo<br>  •  Indiana Jones - Epic Stunt Spectacular, &copy; Disney/Lucasfilm Ltd.<br>  •  It&#39;s Tough to be a Bug® attraction, inspired by the Disney•Pixar film A Bug&#39;s Life<br>  •  Jedi Training: Trials of the Temple &copy;Disney/Lucasfilm, Ltd.<br>  •  Kali River Rapids® attraction<br>  •  Kilimanjaro Safaris® Expedition<br>  •  Maharajah Jungle Trek® attraction<br>  •  Mission: SPACE® attraction<br>  •  Monsters, Inc. Laugh Floor, inspired by Disney•Pixar&#39;s film Monsters, Inc.<br>  •  Pangani Forest Exploration Trail® Walking Tour<br>  •  Pirates of the Caribbean® attraction<br>  •  Primeval Whirl® attraction<br>  •  Rock &#39;N Roller Coaster® Starring Aerosmith attraction<br>  •  Soarin&#39;™ attraction<br>  •  Space Mountain® attraction<br>  •  Splash Mountain® attraction<br>  •  Star Tours: The Adventures Continue &copy;Disney/Lucasfilm Ltd.<br>  •  Star Tours®, The ultimate Star Wars thrill ride, &copy; Disney/Lucasfilm Ltd.<br>  •  Stitch&#39;s Great Escape!™ attraction<br>  •  The Boneyard® Dig Site<br>  •  The Great Movie Ride attraction, TARZAN™ Owned by EDGAR RICE BURROUGHS, INC. and used by permission<br>  •  The Haunted Mansion® attraction<br>  •  The Seas with Nemo &amp; Friends attraction, inspired by the Disney•Pixar film Finding Nemo<br>  •  The Twilight Zone Tower of Terror™ attraction: The Twilight Zone® is a registered trademark of CBS, Inc. and is used with permission pursuant to a license from CBS, Inc.<br>  •  Theater in the Wild® attraction<br>  •  Tomorrowland® Indy Speedway<br>  •  Tomorrowland® Shootin&#39; Arcade<br>  •  Tomorrowland® Stage<br>  •  Tomorrowland® Transit Authority<br>  •  Town Green Presented by Toro®<br>  •  Toy Story Mania!® attraction inspired by the Disney•Pixar Toy Story films<br>  •  Town Green Presented by Toro®<br>  •  Turtle Talk with Crush inspired by the Disney•Pixar films Finding Nemo<br>  •  Walt Disney World® Railroad<br><br><br><strong>ENTERTAINMENT</strong><br><br>  •  AMC® Disney Springs® 24<br>  •  Behind the Seeds at Epcot West Side<br>  •  Cirque du Soleil® show La Nouba™ and Cirque du Soleil® theatre<br>  •  Disney Cruise Line®: Marvel’s Avenger’s Academy &copy;Marvel<br>  •  Wishes™ nighttime spectacular<br>  •  World Music Concert Series™<br><br><br><strong>BEYOND WALT DISNEY WORLD® THEME PARKS</strong><br><br>  •  Disney&#39;s Fantasia Gardens Miniature Golf Course<br>  •  Disney&#39;s Lake Buena Vista Golf Course<br>  •  Disney&#39;s Magnolia Golf Course<br>  •  Disney&#39;s Oak Trail Golf Course<br>  •  Disney&#39;s Osprey Ridge Golf Course<br>  •  Disney&#39;s Palm Golf Course<br>  •  ESPN Wide World of Sports Complex<br>  •  Disney&#39;s Winter Summerland Miniature Golf Course<br>  •  DisneyQuest® Indoor Interactive Theme Park<br>  •  Disney Springs® area<br>  •  Disney Springs® Landing<br>  •  Disney Springs® Marketplace<br>  •  Disney Springs® West Side<br>  •  Disney Springs® Town Center<br>  •  Mandara Spa at Walt Disney World Dolphin Hotel<br>  •  The Spa at Disney&#39;s Saratoga Springs Resort &amp; Spa<br>  •  Walt Disney World® Guided Fishing Excursions<br><br><br><strong>WALT DISNEY WORLD® RESORT HOTELS</strong><br><br>  •  Disney&#39;s All-Star Movies Resort<br>  •  Disney&#39;s All-Star Music Resort<br>  •  Disney&#39;s All-Star Sports Resort<br>  •  Disney&#39;s Animal Kingdom Lodge<br>  •  Disney&#39;s Animal Kingdom Villas - Jambo House Lodge<br>  •  Disney&#39;s Animal Kingdom Villas - Kidani House Lodge<br>  •  Disney&#39;s Art of Animation Resort<br>  •  Disney&#39;s Beach Club Resort<br>  •  Disney&#39;s Beach Club Villas<br>  •  Disney&#39;s BoardWalk Inn<br>  •  Disney&#39;s BoardWalk Villas<br>  •  Disney&#39;s Caribbean Beach Resort<br>  •  Bay Lake Tower at Disney&#39;s Contemporary Resort<br>  •  Disney&#39;s Contemporary Resort<br>  •  Disney&#39;s Coronado Springs Resort<br>  •  Disney&#39;s Fort Wilderness Resort and The Campgrounds at Disney&#39;s Fort Wilderness Resort and The Cabins at Disney&#39;s Fort Wilderness Resort<br>  •  Disney&#39;s Grand Floridian Resort &amp; Spa<br>  •  Disney&#39;s Hilton Head Island Resort<br>  •  Disney&#39;s Old Key West Resort<br>  •  Disney&#39;s Polynesian Resort<br>  •  Disney&#39;s Pop Century Resort<br>  •  Disney&#39;s Port Orleans Resort - French Quarter<br>  •  Disney&#39;s Port Orleans Resort - Riverside<br>  •  Disney&#39;s Saratoga Springs Resort &amp; Spa<br>  •  Disney&#39;s Vero Beach Resort<br>  •  Disney&#39;s Yacht Club Resort<br>  •  Disney&#39;s Wilderness Lodge<br>  •  The Villas at Disney&#39;s Wilderness Lodge<br>  •  Walt Disney World Dolphin Hotel<br>  •  Walt Disney World Swan Hotel<br>  •  Walt Disney World Good Neighbor® Hotel<br><br><br><strong>WALT DISNEY WORLD® RESORT SPECIAL EVENTS</strong><br><br>  •  Epcot® International Flower &amp; Garden Festival<br>  •  Epcot® International Food &amp; Wine Festival<br>  •  Mickey&#39;s Not-So-Scary Halloween Party<br>  •  Mickey&#39;s Very Merry Christmas Party<br><br><br><strong>WALT DISNEY WORLD® THEME PARK TICKETS</strong><br><br>  •  Magic Your Way Base Ticket<br>  •  Magic Your Way Ticket with Park Hopper® Option<br>  •  Magic Your Way Ticket with Park Hopper® Plus Option<br>  •  Magic Your Way Ticket with Water Park Fun &amp; More Option<br>  •  Magic Your Way Ticket with No Expiration Option<br><br><br><strong>WALT DISNEY WORLD® VACATION PACKAGES</strong><br><br>  •  Magic Your Way Package<br>  •  Magic Your Way Package Plus Quick Service Dining<br>  •  Magic Your Way Package Plus Dining<br>  •  Magic Your Way Plus Deluxe Dining<br>  •  Magic Your Way Premium Package<br>  •  Disney Wine &amp; Dine Plan<br><br><br><strong>WALT DISNEY WORLD® SERVICES</strong><br><br>  •  Extra Magic Hours benefit<br>  •  Disney FASTPASS® service<br>  •  Disney Magical Express service<br>  •  Disney PhotoPass® service<br>  •  Accepted credit cards: Visa®, JCB, Diner&#39;s Club®, Discover® MasterCard®, American Express®<br><br><br><strong>DISNEYLAND® RESORT THEME PARKS</strong><br><br>  •  Disneyland® Park<br>  •  Disney California Adventure® Park<br>  •  Downtown Disney® District<br><br><strong>DISNEYLAND® RESORT HOTELS</strong><br><br>  •  Disneyland® Hotel<br>  •  Disney&#39;s Grand Californian Hotel® &amp; Spa<br>  •  Disney&#39;s Paradise Pier® Hotel<br>  •  The Villas at Disney&#39;s Grand Californian Hotel® &amp; Spa<br><br><br><strong>DISNEYLAND® RESORT ATTRACTIONS</strong><br><br>  •  &quot;a bug&#39;s land&quot; inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Buzz Lightyear Astro Blasters inspired by Disney•Pixar&#39;s Toy Story 2<br>  •  Finding Nemo Submarine Voyage inspired by Disney•Pixar&#39;s Finding Nemo<br>  •  Flik &amp; Atta inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Flik &amp; Flyers inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Francis&#39; Ladybug Boogie inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Haunted Mansion Holiday inspired by Tim Burton&#39;s The Nightmare Before Christmas<br>  •  Heimlich&#39;s Chew Chew Train inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  &quot;Indiana Jones&quot; Adventure&copy; Disney/Lucasfilm Ltd. &amp; ™<br>  •  It&#39;s Tough To Be A Bug! Inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Monsters, Inc. Mike &amp; Sulley to the Rescue inspired by Disney•Pixar&#39;s Monsters, Inc.<br>  •  Pixar Play Parade inspired by all your favorite Disney•Pixar&#39;s films<br>  •  Princess Dot Puddle Park inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Roger Rabbit&#39;s Car Toon Spin ROGER RABBIT CHARACTER&copy; Disney/Amblin Entertainment, Inc.<br>  •  Star Tours&copy; Disney/Lucasfilm, Ltd.<br>  •  &quot;Star Wars&quot; Jedi Training Academy Star Wars&copy; 2010 Lucasfilm Ltd. &amp; ™<br>  •  &quot;Tarzan&#39;s Treehouse&quot; : &quot;TARZAN&quot; Owned by Edgar Rice Burroughs, Inc. And used by Permission. COPYRIGHT&copy; 1999 Edgar Rice Burroughs, Inc. and Disney Enterprises, Inc. All Rights Reserved.<br>  •  The Twilight Zone Tower of Terror™ attraction: The Twilight Zone® is a registered trademark of CBS, Inc. and is used with permission pursuant to a license from CBS, Inc.<br>  •  The Ugly Bug Ball inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Toy Story Mania!® attraction inspired by the Disney•Pixar Toy Story films<br>  •  Tuck and Roll&#39;s Drive &#39;Em Buggies inspired by Disney•Pixar&#39;s A Bug&#39;s Life<br>  •  Turtle Talk with Crush inspired by inspired by Disney•Pixar&#39;s Finding Nemo<br><br><br><strong>DISNEYLAND® RESORT SERVICES AND TICKETS</strong><br><br>  •  Disney FastPass® Service<br>  •  Disney PhotoPass® Service<br>  •  Park Hopper® Ticket<br><br><br><strong>PRODUCTS, SERVICES AND PROMOTIONS FOR DISNEY PARKS AND RESORTS</strong><br><br>  •  Made with Magic® ear hats, toys, and merchandise<br>  •  Vinylmation™<br>  •  Disney Visa® Card<br>  •  Disney Premier Visa® Card<br>  •  Disney Rewards® Visa® Card<br>  •  Disney Dream Reward Dollars®<br>  •  Disney Rewards® Redemption Card<br><br><br><strong>CHARACTERS AND STARS</strong><br><br>  •  Audio-Animatronics® Figures<br>  •  AVATAR Characters and Creative Elements: &copy;Twentieth Century Fox Film Corporation. JAMES CAMERON’S <i>AVATAR </i>is a trademark of Twentieth Century Fox Film Corporation. All rights reserved.<br>  •  Ice Gator® mascot for Disney&#39;s Blizzard Beach Water Park<br>  •  Jack Skellington inspired by Tim Burton&#39;s Nightmare Before Christmas<br>  •  Kenworth Truck(s) - Kenworth is a trademark of Paccar, Inc.<br>  •  Little Einsteins:&copy; The Baby Einstein Company, LLC. All Rights Reserved. Little Einsteins and the Little Einsteins logo are trademarks of The Baby Einstein Company, LLC. EINSTEIN is the trademark of The Hebrew University of Jerusalem.<br>  •  Marvel and Avengers Characters: &copy;2017 Marvel<br>  •  Mr. Potato Head: Mr. Potato Head® and Mrs. Potato Head® are registered trademarks of Hasbro, Inc. Used with permission.&copy; Hasbro, Inc. All Rights Reserved.<br>  •  Roger Rabbit characters&copy; Walt Disney Pictures / Amblin<br>      Entertainment, Inc.<br>  •  Slinky® Dog&copy; POOF Slinky LLC<br>  •  TARZAN™ Owned by EDGAR RICE BURROUGHS, INC. and used by permission.<br>  •  VW flying Bug - Volkswagen trademarks, design patents and copyrights are used with the approval of the owner Volkswagen AG<br>  •  Winnie the Pooh:&copy; Disney. Based on the &quot;Winnie the Pooh&quot; works by A.A. Milne and E.H. Shepard<br><br><br><b>Disney·Pixar’s CARS</b><br><br>  •  Boot Camp Hummer character – H-1 Hummer is a trademark of General Motors LLC® <br>  •  Cadillac Range background - Background inspired by the Cadillac Ranch by Ant Farm (Lord, Michaels and Marquez)&copy; 1974 – Cadillac is a registered trademark of General Motors LLC®, used under license.<br>  •  Dusty Rust-eze - Dodge is a trademark of DaimlerChrysler Corporation<br>  •  Ferrari F430 or Ferrari Elements - Ferrari elements are trademarks of Ferrari S.p.A.<br>  •  Fillmore - Volkswagen trademarks, design patents and copyrights are used with the approval of the owner Volkswagen AG<br>  •  Guido with Ferrari Materials - Ferrari elements are trademarks of Ferrari S.p.A.<br>  •  Lizzie - Model T is a registered trademark of Ford Motor Company<br>  •  Luigi - Fiat is a trademark of Fiat S.p.A. Ferrari elements are trademarks of Ferrari S.p.A.<br>  •  Mack - Mack is a registered trademark of Mack Trucks, Inc.<br>  •  Mario - Fairlane is a trademark of Ford Motor Company<br>  •  Mia/Tia - Mazda Miata is a registered trademark of Mazda Motor Corporation<br>  •  Ramone - Chevrolet Impala is a trademark of General Motors LLC®<br>  •  Recycled Battery Truck - Peterbilt is a trademark of Paccar, Inc.<br>  •  Rusty Rust-eze - Dodge is a trademark of DaimlerChrysler Corporation<br>  •  Sally - Porsche is a trademark of Porsche or Porsche®<br>  •  Sarge - Jeep® is a registered trademark of DaimlerChrysler Corporation<br>  •  Sarge&#39;s rank insignia design used with the approval of the U.S. Army<br>  •  Sheriff - Mercury is a registered trademark of Ford Motor Company<br>  •  Tex - Cadillac Coupe DeVille is a trademark of General Motors<br>  •  The King (Strip Weathers) - Plymouth Superbird is a trademark of DaimlerChrysler Corporation and Petty marks used by permission of Petty Marketing LLC<br><br><br><strong>GAMES</strong><br><br>  •  Kingdom Hearts:&copy; Disney. The SQUARESOFT logo is a registered trademark of Square Co., Ltd.<br>  •  Kingdom Hearts 2:&copy; Disney. SQUARE ENIX and the SQUARE ENIX logo are trademarks of Square Enix Co., Ltd.<br>  •  Kingdom Hearts: Chain of Memories: SQUARE ENIX and the SQUARE ENIX logo are trademarks of Square Enix Co., Ltd.<br>  •  Nintendo: Game Boy® Advance, Nintendo DS™, Nintendo Gamecube™ Nintendo Wii™<br>  •  Sony: PlayStation® 2, PSP® system<br>  •  Microsoft: XBOX®, XBOX Live® Arcade<br><br><br><strong>OTHER PROPERTIES</strong><br><br>  •  Club 33®<br>  •  1901®<br>  •  Roger Rabbit characters&copy; Walt Disney Pictures / Amblin Entertainment, Inc.<br>  •  Oban Star-Racers:&copy; Sav! The World Productions / Jetix Europe 2007. All Rights Reserved.<br>  •  Pucca:&copy; Disney Enterprises, Inc.&copy; VOOZ Co. Ltd. All Rights Reserved.<br>  •  A.T.O.M.:&copy; Jetix Europe and SIP Animation.<br>  •  W.I.T.C.H.:&copy; Disney and SIP Animation.<br>  •  Digimon:&copy; ABC Family Properties, Inc. and BVS International N.V. Underlying property ™ &amp; &copy; Toei Animation Co. Ltd. All Rights Reserved.<br>  •  Jackie Chan Adventures:&copy; Sony Pictures Television International. All Rights Reserved.<br>  •  Legend of the Dragon:&copy; BKN International.<br>  •  Beyblade:&copy; Aoki Takao. BB2 Project. TV Tokyo. Licensed by d-rights Inc.<br>  •  Academy Awards® Academy of Motion Picture Arts &amp; Sciences<br>  •  Oscars® Academy of Motion Picture Arts &amp; Sciences<br>  •  &copy; 2014 CPII<br>  •  Disney Netpal&copy; and ™ Disney Enterprises, Inc.<br>  •  Blu-Ray™, Blu-Ray Disc™ and the logos are trademarks of the Blu-Ray Disc Association.<br>  •  Dgamer&copy; and ™ Disney Enterprises, Inc.<br>  •  Facebook® is a registered trademark of Facebook Inc.<br>  •  T. Rowe Price, Invest with Confidence, the big horn sheep design and any combination thereof are all trademarks or registered trademarks of T. Rowe Price Group, Inc.<br>  •  Disney Visa® Card<br>  •  Disney Premier Visa® Card<br>  •  Disney Rewards® Visa® Card<br>  •  Disney Dream Reward Dollars®<br>  •  Disney Rewards® Redemption Card<br>  •  Cadillac Ranch &copy; Ant Farm, (Chip Lord, Hudson Marquez, Doug Michels), 1974<br>  •  Apple®, the Apple logo®, iPad®, iPhone®, iPod® and MacBook® are trademarks of Apple Inc., registered in the U.S. and other countries. App Store℠ is a service mark of Apple Inc. Apple Pay™ and Touch ID™ are trademarks of Apple Inc.<br>  •  Avenir is a trademark of Linotype GmbH registered in the U.S. Patent and Trademark Office and may be registered in certain other jurisdictions.<br>  •  Monotype Baskerville is a trademark of The Monotype Corporation and may be registered in certain jurisdictions.<br>  •  Monotype is a trademark of Monotype Imaging Inc. registered in the U.S. Patent &amp; Trademark Office and may be registered in certain jurisdictions.<br>  •  ITC Conduit is a trademark of Monotype ITC Inc. registered in the U.S. Patent and Trademark Office and which may be registered in certain other jurisdictions.<br>  •  Headline is a trademark of The Monotype Corporation and may be registered in certain jurisdictions.<br>  •  Star Wars: TM &amp; &copy; Lucasfilm Ltd. All Rights Reserved.</div></span>
+                            
+                  </div><span id="page:form:j_id26:feedBack">
+                                    <div class="sub-article-content col-xs-12" style="box-sizing:content-box !important;padding-left:0px;">
+                                        <div>
+                                            <h3 class="pkb-header">Was this article helpful?</h3>
+                                                <label class="pkb-answers">
+                                                    <a onClick="submitDeflectComment('true'); lockScreen(true);">Yes <span class="glyphicon glyphicon-thumbs-up pkb-icon"></span></a>
+                                                    <a data-target="#article_feedback" data-toggle="modal" href="#">No <span class="glyphicon glyphicon-thumbs-down pkb-icon"></span></a>
+                                                </label>
+                                        </div>
+                                    </div></span>
+
+                </div></span>
+
+             </div>
+
+            <div class="clear"></div> 
+
+            <div class="contact-button-container">
+                <hr />
+                <div>
+                    <h3>Still looking for the right answer?</h3>
+                    <a class="btn btn-warning btn-lg" data-linkname="ContactUsProduct" data-linkposition="sidebar/right" href="/en_US/Games/Contact?productCode=Disney-com" id="contact-btn" type="button">Contact Us</a>
+                </div>
+            </div>
+            
+
+
+            <div class="clear"></div>
+              </div></span>
+        </div><span id="page:form:j_id26:j_id381">
+<footer class="SEA-footer">
+        <nav id="bottomnav">
+          <ul class="cols-4"><li class="col item  primary-theme light">
+            <h3><a href="http://sea.disney.asia/video ">Video</a></h3>
+              <a data-module-title="Video" href="http://sea.disney.asia/video/movies">Movies</a>
+              <a data-module-title="Video" href="http://sea.disney.asia/video/tv">TV Shows</a>
+          </li><li class="col item  primary-theme light">
+            <h3><a href="http://sea.disney.asia/movies ">Movies</a></h3>
+              <a data-module-title="Movies" href="http://sea.disney.asia/movies/in-cinemas ">In Cinemas</a>
+              <a data-module-title="Movies" href="http://sea.disney.asia/movies/watch-at-home ">At Home</a>
+              <a data-module-title="Movies" href="http://sea.disney.asia/movies/all-movies">All Movies</a>
+          </li><li class="col item  primary-theme light">
+            <h3><a href="http://sea.disney.asia/tv">TV</a></h3>
+              <a data-module-title="TV" href="http://disneychannel.asia">Disney Channel</a>
+              <a data-module-title="TV" href="http://disneyxd.asia">Disney XD</a>
+              <a data-module-title="TV" href="http://disneyjunior.asia">Disney Junior</a>
+          </li><li class="col item  primary-theme light">
+            <h3><a href="http://sea.disney.asia/games">Games</a></h3>
+              <a data-module-title="Games" href="http://sea.disney.asia/games/online-games">Online Games</a>
+              <a data-module-title="Games" href="http://sea.disney.asia/apps">Mobile Apps</a>
+              <a data-module-title="Games" href="https://infinity.disney.com/en-apac">Disney Infinity</a>
+              <a data-module-title="Games" href="http://www.clubpenguin.com">Club Penguin</a>
+          </li></ul>
+        </nav>
+    
+    </footer></span><span id="page:form:j_id26:j_id384">
+    <div class="container footer-container">
+        <div class="row" id="footer">
+            <img class="visible-sm visible-md visible-lg" src="/resource/1502397863000/dig_Common/common/images/dark-disney.png" />
+            <div class="links desktop-footer col-sm-12 col-md-12">
+                <ul class="footer-first">
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id426:0:j_id430">
+                          <a href="http://thewaltdisneycompany.com/">Disney</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id426:1:j_id430">
+                          <a href="http://disneycareers.com/en/default/">Careers</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id426:2:j_id428">
+                          <a href="javascript:void(0);" id="link" onClick="AnalyticsTrackLinkFooter('dig_contact', 'FooterContactUs','btm'); return false;">Contact Us</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id426:3:j_id428">
+                          <a href="javascript:void(0);" id="link" onClick="AnalyticsTrackLinkFooter('dig_products', 'FooterContactUs','btm'); return false;">Games</a></span>
+                      </li>                    
+
+                </ul>
+                <div class="clear"></div>
+                <ul class="language-select">
+                  <li>
+                     <select id="local-selector" name="local" onchange="changeLanguage(this.value, 'https://help.disney.com/', 'en_US~fr_CA~ru~ja~pt_BR~en_GB~de~es~it~nl~fr-be~nl-be~de_CH~fr-ch~fr~en_CA~pl~no~sv~da~fi~es~en_AU~en-apac~de_AT~en-nz~es_MX~zh_CN~ko~zh_TW', '#en_US#~#ru#~#ja#~#pt_BR#~#en_GB#~#de#~#it#~#fr#~#pl#~#no#~#sv#~#da#~#fi#~#zh_CN#~#ko#~#zh_TW#', '#fr_CA#=*fr*~#es#=*es*~#nl#=*nl_NL*~#fr-be#=*fr*~#nl-be#=*nl_NL*~#de_CH#=*de*~#fr-ch#=*fr*~#en_CA#=*en_US*~#es#=*es*~#en_AU#=*en_US*~#en-apac#=*en_GB*~#de_AT#=*de*~#en-nz#=*en_US*~#es_MX#=*es*');">
+                         <option value="en_US">United States</option>
+                         <option value="fi">Suomi</option>
+                         <option value="ru">Russia</option>
+                         <option value="pl">Polska</option>
+                         <option value="en-nz">New Zealand</option>
+                         <option value="it">Italia</option>
+                         <option value="fr">France</option>
+                         <option value="en_CA">Canada (en)</option>
+                         <option value="pt_BR">Brasil</option>
+                         <option value="en_AU">Australia</option>
+                         <option value="es">Espa&ntilde;a</option>
+                         <option value="en-apac">Asia Pacific</option>
+                         <option value="fr_CA">Canada (fr)</option>
+                         <option value="fr-be">Belgique</option>
+                         <option value="nl-be">Belgi&euml;</option>
+                         <option value="no">Norge</option>
+                         <option value="sv">Sverige</option>
+                         <option value="nl">Nederland</option>
+                         <option value="zh_CN">China (Simplified)</option>
+                         <option value="zh_TW">China (Traditional)</option>
+                         <option value="es_MX">Mexico</option>
+                         <option value="es">Am&eacute;rica Latina</option>
+                         <option value="da">Danmark</option>
+                         <option value="ko">Korea</option>
+                         <option value="ja">&#26085;&#26412;</option>
+                         <option value="en_GB">United Kingdom</option>
+                         <option value="fr-ch">Suisse</option>
+                         <option value="de_AT">&Ouml;sterreich</option>
+                         <option value="de_CH">Schweiz</option>
+                         <option value="de">Deutschland</option>                     
+                     </select>
+                   </li> 
+                </ul> 
+                <ul class="footer-last">
+                    <li><a href="http://disneyprivacycenter.com/internet-safety/">Internet Safety</a></li>
+                    <li><a href="http://disneytermsofuse.com/">Terms of Use</a></li>
+                    <li><a href="http://help.disney.com/articles/en_US/FAQ/Legal-Notices">Legal Notices</a></li>
+                    <li><a href="https://disneyprivacycenter.com/privacy-policy-translations/english/">Privacy Policy</a></li>
+                    <li><a href="https://disneyprivacycenter.com/notice-to-california-residents/">Your California Privacy Rights</a></li>
+                    <li><a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children`s Online Privacy Policy</a></li>
+                  <li class="SEA-link"><a href="http://www.disney.my/supplemental-privacy-policy-malaysia">Supplemental Privacy Policy for Malaysia</a></li>
+                  <li class="SEA-link"><a href="http://www.disney.ph/supplemental-privacy-policy-philippines">Supplemental Privacy Policy for Philippines</a></li>
+                  <li class="SEA-link"><a href="https://disneytermsofuse.com/thai/">&#3648;&#3591;&#3639;&#3656;&#3629;&#3609;&#3652;&#3586;&#3585;&#3634;&#3619;&#3651;&#3594;&#3657;&#3591;&#3634;&#3609;</a></li>
+                  <li class="SEA-link"><a href="https://disneyprivacycenter.com/privacy-policy-translations/thai/">&#3588;&#3623;&#3634;&#3617;&#3648;&#3611;&#3655;&#3609;&#3626;&#3656;&#3623;&#3609;&#3605;&#3633;&#3623;</a></li>
+                </ul>
+                <div class="clear"></div>
+                
+                <ul class="desktop-copy"><li>&copy;Disney. All Rights Reserved.</li></ul>
+                <div class="clear"></div>
+            
+            </div>
+            <div class="clear"></div>
+            <div class="links mobile-footer col-sm-12 col-md-12">
+                
+                <div class="clear"></div>
+                <ul class="footer-first">
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id442:0:j_id446">
+                          <a href="http://thewaltdisneycompany.com/">Disney</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id442:1:j_id446">
+                          <a href="http://disneycareers.com/en/default/">Careers</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id442:2:j_id444">
+                          <a href="javascript:void(0);" id="link">Contact Us</a></span>
+                      </li>
+                      <li><span id="page:form:j_id26:j_id384:j_id385:j_id442:3:j_id444">
+                          <a href="javascript:void(0);" id="link">Games</a></span>
+                      </li>
+
+                </ul>
+                <ul class="footer-second">
+                    <li><a href="http://disneyprivacycenter.com/internet-safety/">Internet Safety</a></li>
+                    <li><a href="http://disneytermsofuse.com/">Terms of Use</a></li>
+                    <li><a href="http://help.disney.com/articles/en_US/FAQ/Legal-Notices">Legal Notices</a></li>
+                    <li><a href="https://disneyprivacycenter.com/privacy-policy-translations/english/">Privacy Policy</a></li>
+                    <li><a href="https://disneyprivacycenter.com/notice-to-california-residents/">Your California Privacy Rights</a></li>
+                    <li><a href="https://disneyprivacycenter.com/kids-privacy-policy/english/">Children`s Online Privacy Policy</a></li>
+                  <li class="SEA-link"><a href="http://www.disney.my/supplemental-privacy-policy-malaysia">Supplemental Privacy Policy for Malaysia</a></li>
+                  <li class="SEA-link"><a href="http://www.disney.ph/supplemental-privacy-policy-philippines">Supplemental Privacy Policy for Philippines</a></li>
+                  <li class="SEA-link"><a href="https://disneytermsofuse.com/thai/">&#3648;&#3591;&#3639;&#3656;&#3629;&#3609;&#3652;&#3586;&#3585;&#3634;&#3619;&#3651;&#3594;&#3657;&#3591;&#3634;&#3609;</a></li>
+                  <li class="SEA-link"><a href="https://disneyprivacycenter.com/privacy-policy-translations/thai/">&#3588;&#3623;&#3634;&#3617;&#3648;&#3611;&#3655;&#3609;&#3626;&#3656;&#3623;&#3609;&#3605;&#3633;&#3623;</a></li>
+                </ul>
+                <ul class="copy-right">
+                  <li>&copy;Disney. All Rights Reserved.</li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div> 
+    <div class="footer-divider"></div></span>
+
+    </div>
+    </body>
+
+
+
+
+<div class="modal fade" data-backdrop="static" id="device">
+    <div class="modal-dialog">
+        <div class="modal-content webform">
+             <div class="popup-inner">
+                    <div class="close-message">X</div>
+                    <div class="title-container">
+                      <h2 class="center">Check Your Device Compatibility</h2>
+                      <p>Enter Your Device Below</p>
+                    </div>
+                    <div id="remote">
+                        <input class="single" id="typeahead" placeholder="Search a device" type="text" />
+                    </div>
+                    <div class="error-block error">
+                        <div class="error-message">
+                            <ul>
+                                <li>
+                                    Sorry, your device doesn&#8217;t seem to be compatible.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="form-wrapper layer2">
+
+                                <p>Would you like to be notified when DisneyLife will be available on your device?</p>
+                                <div class="field-section">
+                                  <label>Email Address</label>
+                                  <div class="form-group">
+                                      <input class="form-control" id="device-email" name="email" placeholder="name@email.com" type="email" />
+                                      <div class="help-block with-errors"></div>
+                                  </div>
+                                </div>
+                                <div class="group-section">
+                                  <div class="field-section floating-error">
+                                    <div class="checkbox multiline terms">
+                                    <input id="horizon_pre_registration" name="horizon_pre_registration" type="checkbox" />
+                                      <label id="checkbox_horizon_pre_registration">
+                                        <span class="small">
+                                          Please email me with news about DisneyLife availability on my device.
+                                          I am aged 18 or over and I agree to
+                                          <a data-cto-linkname="pre-registration/disneyprivacypolicy" data-cto-linkpagename="disney-privacy-policy" href="https://disneylife.com/terms#privacy" target="_blank">Disney's Privacy Policy</a>
+                                          and
+                                          <a data-cto-linkname="mktsite/home/cookiespolicy" data-cto-linkpagename="disney-cookies-policy" href="https://disneylife.com/terms#cookies" target="_blank">Cookies Policy</a>.
+                                        </span>
+                                        <span class="hrzn-icon-ui-remove" style="display:block"></span>
+                                      </label>
+                                    </div>
+                                    <div class="help-block input with-errors"></div>
+                                  </div>
+                                </div>
+
+                                <p>
+                                  <a class="btn round secondary" id="btn-pre-register" onClick="validateDevice();">
+                                    Keep Me Posted
+                                  </a>
+                                </p>
+
+
+
+                        </div>
+                    </div>
+                    <div class="device-success">
+                        <p>Congrats, your device is compatible! Please make sure your device is running <span class="os"></span> or later</p>
+                    </div>
+            </div>
+            </div>
+        </div>
+      </div>
+      <div class="modal fade" data-backdrop="static" id="confirmation">
+        <div class="modal-dialog">
+            <div class="modal-content webform">
+                <div class="popup-inner">
+                        <p>Thank you for your interest. We will be in touch soon.</p>
+                        <a class="btn round primary" onclick="location.href = location.href">Okay</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/resource/1502397863000/Horizon_Common/js/selectize.js" type="text/javascript"></script>
+    
+    <div class="modal fade" id="article_improvement">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h4 class="modal-title">Help us improve this article</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Are we missing important information? Please let us know how we can improve this article.</p>
+
+                    <div class="form-group">
+                        <label class="control-label" for="email">Email</label>
+                            <input class="form-control" name="email" placeholder="Optional" />
+                      </div>
+                    <div class="form-group">
+                        <label class="control-label" for="lastname" line="10">Comments</label>
+                        <textarea class="form-control" lines="6" name="content" placeholder="comments"></textarea>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                    <button class="btn btn-primary" onclick="closeDialog();" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="modal fade Gamesmodal" id="article_feedback">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+                    <h4 class="modal-title">Help us improve this article</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Please tell us how we can make this article more useful.</p>
+
+                    <div class="form-group">
+                        <label class="control-label" for="lastname" line="10">Comments</label><textarea name="page:form:j_id525" class="form-control" cols="40" rows="7" placeholder="comments"></textarea>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+                    <button class="btn btn-primary" onClick="submitDeflectComment('false'); closeDialog();" type="button">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div><input id="page:form:theHiddenInput" type="hidden" name="page:form:theHiddenInput" value="false" />
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    // $(".embed-video").attr("src", "");
+    $(".embed-video").html('<iframe id="embed-video" allowfullscreen="true" frameborder="0" height="" scrolling="no" src="" width="100%"></iframe>');
+  });
+</script>
+
+<script src="https://global.go.com/stat/dolWebAnalytics.js"></script>
+<script>
+var cto = new CTO();
+cto.account = "wdgdsec,wdgdolgamsup";
+cto.categoryCode = "dgame";
+cto.siteCode = "gamesupport";
+cto.breadcrumbs = "products|Disney.com|article";
+cto.pageName = "Legal-Notices";
+cto.author = "";
+cto.postDate = "";
+cto.genre = "";
+cto.abTest = "";
+cto.version = "";
+cto.seriesCode = "";
+cto.templateType = "";
+cto.brandSegment = "dgame";
+cto.track();//Required. Do not remove.
+</script><div id="page:form:j_id541"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201712082045540653" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNkluUlRkVzAyVkRkVFpsUXlZazVQZEZkTGEwWjBkbFp0VkY5UVkzQlJVa0o1VjFndFgyMU1kRzA1T0dOY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3Ukdrd01EQXdNREF3WkhkWk9Wd2lMRndpZGx3aU9sd2lNREF3TURBd01EQXdNREF3TURBd1hDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05Xa3dNREF3TURBeU5rUTJNVndpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFV4TWprME1UUTJNRFl6Tml3aVpYaHdJam93ZlE9PS4uUWRPYlNTS2R1N09mMFlyQkhQWW1nRXl5REhYMFhWUlNjVjdQZktGMTBxND0=" /></span></span>
+  </body><span id="page:j_id538">
+	<script src="/resource/1502397863000/dig_Common/common/libs/main.js" type="text/javascript"></script>
+	<script src="/resource/1502397863000/dig_Common/common/libs/global.js" type="text/javascript"></script></span><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["page:form"]);
+
+});</script></html>

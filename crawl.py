@@ -1,6 +1,9 @@
 import urllib.request,re
+import lxml.html
+import os
 
-# crawl crawls Wikipedia pages, by depth-first search implementation.
+# help from http://buildsearchengine.blogspot.com/ for setting up dfs web crawler
+
 
 # reads webpage, returns page contents
 def read_page(url):
@@ -30,38 +33,110 @@ def get_internal_links(page_content):
     return list(set(internal_links))
 
 
-# joins two lists, disregarding duplicate items
+# gets ALL internal links from a given webpage's content, converts relative links to full links
+def get_all_links(page_content):
+    parsed = lxml.html.fromstring(page_content)
+    valid_links = parsed.xpath('//a/@href')
+    # returns list of links on the page
+    return valid_links
+
+
+# given a list and a url, changes relative links to full links
+def change_relative_to_absolute(links,url):
+    valid_links = []
+    for link in links:
+        # change relative links to full links
+        if "http://" not in link and "https://" not in link and "www." not in link:
+            #baseurl = "http://" + str(os.path.basename(url))
+            newurl = url + link.replace(" ", "")
+            # add link to list of potentially valid links
+            valid_links.append(newurl)
+            print("changed " + link + " to " + newurl)
+        # select the url in href for all a tags(links)
+        else:
+            # appends a full link to list of valid links
+            valid_links.append(link)
+    return valid_links
+
+
+# joins two lists of links, disregarding duplicate items
 def union(a, b):
     for link in b:
         if link not in a:
             a.append(link)
 
 
-# generates list of many many many wikipedia links starting from a seed
-def crawl_web(seed, max_pages): # depth-first crawl implementation
+# generates list of many many many links starting from a seed, using depth first traversal
+def dfs_crawl_web(seed, max_pages): # depth-first crawl implementation
     queue = [seed]  # links that have not been visited
     visited = []  # links that have been visited
     dat_content = {}
     while queue and len(visited) < max_pages:  # while there are items in queue
         page = queue.pop()  # remove top item in queue
         if page not in visited:  # if that item has not been visited
-            page_content = read_page(page)  # reads page
-            file_path = "webpages/" + str(len(visited) + 1) + ".html"  # generates file name to save content to
-            file_out = open(file_path, "w", encoding="utf-8")  # opens file
-            file_out.write(page_content)  # writes page content to file
-            file_out.close()  # closes file
-            dat_content[str(len(visited) + 1) + ".html"] = page  # str(len(visited) +1) +".html" + " " + page + "\n"
-            union(queue, get_internal_links(page_content))  # add links from that page to the queue
-            visited.append(page)  # add the page to the list of visited links
+            try:
+                print("Visiting " + page)
+                page_content = read_page(page)  # reads page
+                file_path = "webpages/" + str(len(visited) + 1) + ".html"  # generates file name to save content to
+                file_out = open(file_path, "w", encoding="utf-8")  # opens file
+                file_out.write(page_content)  # writes page content to file
+                file_out.close()  # closes file
+                dat_content[str(len(visited) + 1) + ".html"] = page  # str(len(visited) +1) +".html" + " " + page + "\n"
+                union(queue, change_relative_to_absolute(get_all_links(page_content),
+                                                         page))  # add links from that page to the queue
+                visited.append(page)  # add the page to the list of visited links
+                print("added " + page)
+            except:
+                print("Error reading" + page)
     dat_file = open("index.dat", "w", encoding="utf-8")  # opens index.dat
     dat_file.write(str(dat_content))  # "saves info for all generated files"
     dat_file.close()  # closes dat file
-    return visited  # returns list of visited pages
+    print(visited)  # prints list of visited pages
+
+
+# generates list of many many many links starting from a seed, using breadth-first first traversal
+def bfs_crawl_web(seed, max_pages):  # depth-first crawl implementation
+    queue = [seed]  # links that have not been visited
+    visited = []  # links that have been visited
+    dat_content = {}
+
+    while queue and len(visited) < max_pages:  # while there are items in queue
+        page = queue[0]  # get first page in queue
+        if page not in visited:  # if that page has not been visited
+            try:
+                print("visiting" + page)
+                page_content = read_page(page)  # reads page
+                file_path = "webpages/" + str(len(visited) + 1) + ".html"  # generates file name to save content to
+                file_out = open(file_path, "w", encoding="utf-8")  # opens file
+                file_out.write(str(page_content))  # writes page content to file
+                file_out.close()  # closes file
+                dat_content[str(len(visited) + 1) + ".html"] = page  # str(len(visited) +1) +".html" + " " + page + "\n"
+                union(queue, change_relative_to_absolute(get_all_links(page_content), page))  # add links from that page to the queue
+                visited.append(page)  # add the page to the list of visited links
+            except:
+                print("error reading" + page)
+        del queue[0] # remove the visited page from queue
+    dat_file = open("index.dat", "w", encoding="utf-8")  # opens index.dat
+    dat_file.write(str(dat_content))  # "saves info for all generated files"
+    dat_file.close()  # closes dat file
+    print(visited)  # prints list of visited pages
+
+
+# user inputs seed, type of traversal (dfs or bfs) and max _pages to visit,
+def crawl(seed, traversal, n):
+    if traversal == "dfs":
+        bfs_crawl_web(seed,n)
+    elif traversal == "bfs":
+        dfs_crawl_web(seed,n)
+    else:
+        return "Invalid traversal type"
 
 
 # ------------------main----------------------
 
 # saves 100 urls from web crawl
-crawl_web("https://en.wikipedia.org/wiki/Star_Wars", 500)
+bfs_crawl_web("http://www.starwars.com", 200)
+
+crawl()
 
 #print(get_all_links(read_page("https://www.google.com")))
